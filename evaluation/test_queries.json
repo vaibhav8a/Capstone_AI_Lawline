@@ -1,0 +1,626 @@
+[
+  {
+    "query_id": "d01",
+    "category": "direct_section",
+    "query": "What does IPC Section 420 say?",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "420",
+        "title": "Cheating and dishonestly inducing delivery of property"
+      }
+    ],
+    "gold_count": 1
+  },
+  {
+    "query_id": "d02",
+    "category": "direct_section",
+    "query": "Explain Section 302 of the Indian Penal Code",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "302",
+        "title": "Punishment for murder"
+      }
+    ],
+    "gold_count": 1
+  },
+  {
+    "query_id": "d03",
+    "category": "direct_section",
+    "query": "IPC section 378 definition",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "378",
+        "title": "Theft"
+      }
+    ],
+    "gold_count": 1
+  },
+  {
+    "query_id": "d04",
+    "category": "direct_section",
+    "query": "What is Section 124A IPC?",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "124A",
+        "title": "Sedition"
+      }
+    ],
+    "gold_count": 1
+  },
+  {
+    "query_id": "d05",
+    "category": "direct_section",
+    "query": "Section 498A of IPC",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "498A",
+        "title": "Husband or relative of husband of a woman subjecting her to cruelty"
+      }
+    ],
+    "gold_count": 1
+  },
+  {
+    "query_id": "d06",
+    "category": "direct_section",
+    "query": "What is section 511 IPC about?",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "511",
+        "title": "Punishment for attempting to commit offences punishable with imprisonment for life or other imprisonment"
+      }
+    ],
+    "gold_count": 1
+  },
+  {
+    "query_id": "d07",
+    "category": "direct_section",
+    "query": "IPC 304A explain",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "304A",
+        "title": "Causing death by negligence"
+      }
+    ],
+    "gold_count": 1
+  },
+  {
+    "query_id": "d08",
+    "category": "direct_section",
+    "query": "What does Section 34 IPC state?",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "34",
+        "title": "Acts done by several persons in futherance of common intention"
+      }
+    ],
+    "gold_count": 1
+  },
+  {
+    "query_id": "d09",
+    "category": "direct_section",
+    "query": "Section 120B Indian Penal Code",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "120B",
+        "title": "Punishment of criminal conspiracy"
+      }
+    ],
+    "gold_count": 1
+  },
+  {
+    "query_id": "d10",
+    "category": "direct_section",
+    "query": "What is BNS section 103?",
+    "gold": [
+      {
+        "document": "BNS",
+        "section": "103",
+        "title": "Punishment for murder"
+      }
+    ],
+    "gold_count": 1
+  },
+  {
+    "query_id": "n01",
+    "category": "natural_language",
+    "query": "Someone tricked me into transferring my property to them by lying about who they were",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "420",
+        "title": "Cheating and dishonestly inducing delivery of property"
+      }
+    ],
+    "gold_count": 1
+  },
+  {
+    "query_id": "n02",
+    "category": "natural_language",
+    "query": "What is the punishment for intentionally killing another person?",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "302",
+        "title": "Punishment for murder"
+      }
+    ],
+    "gold_count": 1
+  },
+  {
+    "query_id": "n03",
+    "category": "natural_language",
+    "query": "My neighbour took my bicycle from my garden without asking me",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "378",
+        "title": "Theft"
+      },
+      {
+        "document": "IPC",
+        "section": "379",
+        "title": "Punishment for theft"
+      }
+    ],
+    "gold_count": 2
+  },
+  {
+    "query_id": "n04",
+    "category": "natural_language",
+    "query": "A husband and his family are harassing a woman over dowry demands",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "498A",
+        "title": "Husband or relative of husband of a woman subjecting her to cruelty"
+      }
+    ],
+    "gold_count": 1
+  },
+  {
+    "query_id": "n05",
+    "category": "natural_language",
+    "query": "A driver was speeding recklessly and killed a pedestrian without meaning to",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "304A",
+        "title": "Causing death by negligence"
+      }
+    ],
+    "gold_count": 1
+  },
+  {
+    "query_id": "n06",
+    "category": "natural_language",
+    "query": "Two people planned a crime together before committing it",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "120A",
+        "title": "Definition of criminal conspiracy"
+      },
+      {
+        "document": "IPC",
+        "section": "120B",
+        "title": "Punishment of criminal conspiracy"
+      }
+    ],
+    "gold_count": 2
+  },
+  {
+    "query_id": "n07",
+    "category": "natural_language",
+    "query": "Someone threatened to publish private photos unless I paid them money",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "383",
+        "title": "Extortion"
+      },
+      {
+        "document": "IPC",
+        "section": "384",
+        "title": "Punishment for extortion"
+      }
+    ],
+    "gold_count": 2
+  },
+  {
+    "query_id": "n08",
+    "category": "natural_language",
+    "query": "A public servant deliberately disobeyed the law intending to harm someone",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "166",
+        "title": "Public servant disobeying law, with intent to cause injury to any person"
+      }
+    ],
+    "gold_count": 1
+  },
+  {
+    "query_id": "n09",
+    "category": "natural_language",
+    "query": "Someone forged a document to cheat a bank",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "463",
+        "title": "Forgery"
+      },
+      {
+        "document": "IPC",
+        "section": "465",
+        "title": "Punishment for forgery"
+      }
+    ],
+    "gold_count": 2
+  },
+  {
+    "query_id": "n10",
+    "category": "natural_language",
+    "query": "A group of five people gathered with the common aim of causing a riot",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "141",
+        "title": "Unlawful assembly"
+      },
+      {
+        "document": "IPC",
+        "section": "146",
+        "title": "Rioting"
+      }
+    ],
+    "gold_count": 2
+  },
+  {
+    "query_id": "p01",
+    "category": "paraphrase",
+    "query": "Which provision covers dishonestly inducing a person to hand over property?",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "420",
+        "title": "Cheating and dishonestly inducing delivery of property"
+      }
+    ],
+    "gold_count": 1
+  },
+  {
+    "query_id": "p02",
+    "category": "paraphrase",
+    "query": "What provision deals with causing death by a rash or negligent act?",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "304A",
+        "title": "Causing death by negligence"
+      }
+    ],
+    "gold_count": 1
+  },
+  {
+    "query_id": "p03",
+    "category": "paraphrase",
+    "query": "Which section covers acts done by several persons in furtherance of a common intention?",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "34",
+        "title": "Acts done by several persons in futherance of common intention"
+      }
+    ],
+    "gold_count": 1
+  },
+  {
+    "query_id": "p04",
+    "category": "paraphrase",
+    "query": "What does the Code say about attempting to commit an offence but failing?",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "511",
+        "title": "Punishment for attempting to commit offences punishable with imprisonment for life or other imprisonment"
+      }
+    ],
+    "gold_count": 1
+  },
+  {
+    "query_id": "p05",
+    "category": "paraphrase",
+    "query": "Which provision defines dishonest misappropriation of movable property?",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "403",
+        "title": "Dishonest misappropriation of property"
+      }
+    ],
+    "gold_count": 1
+  },
+  {
+    "query_id": "p06",
+    "category": "paraphrase",
+    "query": "What is the provision on wrongfully confining a person?",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "340",
+        "title": "Wrongful confinement"
+      },
+      {
+        "document": "IPC",
+        "section": "342",
+        "title": "Punishment for wrongful confinement"
+      }
+    ],
+    "gold_count": 2
+  },
+  {
+    "query_id": "a01",
+    "category": "ambiguous",
+    "query": "What is the punishment for hurt?",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "319",
+        "title": "Hurt"
+      },
+      {
+        "document": "IPC",
+        "section": "323",
+        "title": "Punishment for voluntarily causing hurt"
+      },
+      {
+        "document": "IPC",
+        "section": "325",
+        "title": "Punishment for voluntarily causing grievous hurt"
+      }
+    ],
+    "gold_count": 3
+  },
+  {
+    "query_id": "a02",
+    "category": "ambiguous",
+    "query": "cheating",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "415",
+        "title": "Cheating"
+      },
+      {
+        "document": "IPC",
+        "section": "417",
+        "title": "Punishment for cheating"
+      },
+      {
+        "document": "IPC",
+        "section": "420",
+        "title": "Cheating and dishonestly inducing delivery of property"
+      }
+    ],
+    "gold_count": 3
+  },
+  {
+    "query_id": "a03",
+    "category": "ambiguous",
+    "query": "theft related offences",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "378",
+        "title": "Theft"
+      },
+      {
+        "document": "IPC",
+        "section": "379",
+        "title": "Punishment for theft"
+      },
+      {
+        "document": "IPC",
+        "section": "380",
+        "title": "Theft in dwelling house, etc"
+      }
+    ],
+    "gold_count": 3
+  },
+  {
+    "query_id": "a04",
+    "category": "ambiguous",
+    "query": "criminal breach of trust",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "405",
+        "title": "Criminal breach of trust"
+      },
+      {
+        "document": "IPC",
+        "section": "406",
+        "title": "Punishment for criminal breach of trust"
+      }
+    ],
+    "gold_count": 2
+  },
+  {
+    "query_id": "m01",
+    "category": "multi_section",
+    "query": "What is the difference between culpable homicide and murder?",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "299",
+        "title": "Culpable homicide"
+      },
+      {
+        "document": "IPC",
+        "section": "300",
+        "title": "Murder"
+      }
+    ],
+    "gold_count": 2
+  },
+  {
+    "query_id": "m02",
+    "category": "multi_section",
+    "query": "How does the Code distinguish theft, extortion and robbery?",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "378",
+        "title": "Theft"
+      },
+      {
+        "document": "IPC",
+        "section": "383",
+        "title": "Extortion"
+      },
+      {
+        "document": "IPC",
+        "section": "390",
+        "title": "Robbery"
+      }
+    ],
+    "gold_count": 3
+  },
+  {
+    "query_id": "m03",
+    "category": "multi_section",
+    "query": "What are the punishments for culpable homicide not amounting to murder and for murder?",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "302",
+        "title": "Punishment for murder"
+      },
+      {
+        "document": "IPC",
+        "section": "304",
+        "title": "Punishment for culpable homicide not amounting to murder"
+      }
+    ],
+    "gold_count": 2
+  },
+  {
+    "query_id": "m04",
+    "category": "multi_section",
+    "query": "Explain criminal conspiracy and abetment",
+    "gold": [
+      {
+        "document": "IPC",
+        "section": "107",
+        "title": "Abetment of a thing"
+      },
+      {
+        "document": "IPC",
+        "section": "120A",
+        "title": "Definition of criminal conspiracy"
+      },
+      {
+        "document": "IPC",
+        "section": "120B",
+        "title": "Punishment of criminal conspiracy"
+      }
+    ],
+    "gold_count": 3
+  },
+  {
+    "query_id": "o01",
+    "category": "out_of_corpus",
+    "query": "What are the filing requirements for a GST return?",
+    "gold": [],
+    "gold_count": 0
+  },
+  {
+    "query_id": "o02",
+    "category": "out_of_corpus",
+    "query": "How do I apply for an Indian passport?",
+    "gold": [],
+    "gold_count": 0
+  },
+  {
+    "query_id": "o03",
+    "category": "out_of_corpus",
+    "query": "What is the procedure for registering a trademark in India?",
+    "gold": [],
+    "gold_count": 0
+  },
+  {
+    "query_id": "o04",
+    "category": "out_of_corpus",
+    "query": "What is the capital gains tax rate on equity shares?",
+    "gold": [],
+    "gold_count": 0
+  },
+  {
+    "query_id": "o05",
+    "category": "out_of_corpus",
+    "query": "Write me a Python function to reverse a linked list",
+    "gold": [],
+    "gold_count": 0
+  },
+  {
+    "query_id": "b01",
+    "category": "ipc_bns_mapping",
+    "query": "What is the BNS provision for murder?",
+    "gold": [
+      {
+        "document": "BNS",
+        "section": "103",
+        "title": "Punishment for murder"
+      }
+    ],
+    "gold_count": 1
+  },
+  {
+    "query_id": "b02",
+    "category": "ipc_bns_mapping",
+    "query": "Which BNS section deals with cheating and dishonestly inducing delivery of property?",
+    "gold": [
+      {
+        "document": "BNS",
+        "section": "318",
+        "title": "Cheating"
+      }
+    ],
+    "gold_count": 1
+  },
+  {
+    "query_id": "b03",
+    "category": "ipc_bns_mapping",
+    "query": "What does the Bharatiya Nyaya Sanhita say about theft?",
+    "gold": [
+      {
+        "document": "BNS",
+        "section": "303",
+        "title": "Theft"
+      }
+    ],
+    "gold_count": 1
+  },
+  {
+    "query_id": "b04",
+    "category": "ipc_bns_mapping",
+    "query": "BNS provision on criminal conspiracy",
+    "gold": [
+      {
+        "document": "BNS",
+        "section": "61",
+        "title": "Criminal conspiracy"
+      }
+    ],
+    "gold_count": 1
+  }
+]

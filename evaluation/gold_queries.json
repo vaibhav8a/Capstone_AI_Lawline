@@ -1,0 +1,74 @@
+{
+  "queries": [
+    {
+      "id": "q001",
+      "question": "What is the ratio decidendi of Kesavananda Bharati v. State of Kerala?",
+      "expected_answer_keywords": ["basic structure", "constitutional amendment", "judicial review", "parliament"],
+      "expected_case_ids": ["Kesavananda Bharati"],
+      "category": "constitutional_law"
+    },
+    {
+      "id": "q002",
+      "question": "How did the Supreme Court rule on the right to privacy in Puttaswamy v. Union of India?",
+      "expected_answer_keywords": ["fundamental right", "Article 21", "privacy", "Aadhar"],
+      "expected_case_ids": ["K.S. Puttaswamy", "Justice K.S. Puttaswamy"],
+      "category": "fundamental_rights"
+    },
+    {
+      "id": "q003",
+      "question": "What is the strict liability rule established in M.C. Mehta v. Union of India?",
+      "expected_answer_keywords": ["absolute liability", "hazardous", "oleum gas", "strict liability"],
+      "expected_case_ids": ["M.C. Mehta", "M C Mehta"],
+      "category": "tort_law"
+    },
+    {
+      "id": "q004",
+      "question": "What test did the Supreme Court use to determine reasonableness of restrictions on free speech?",
+      "expected_answer_keywords": ["Article 19", "reasonable restriction", "public order", "proportionality"],
+      "expected_case_ids": [],
+      "category": "fundamental_rights"
+    },
+    {
+      "id": "q005",
+      "question": "What are the requirements for a valid Section 144 order under the CrPC?",
+      "expected_answer_keywords": ["magistrate", "imminent danger", "Section 144", "emergency"],
+      "expected_case_ids": [],
+      "category": "criminal_procedure"
+    },
+    {
+      "id": "q006",
+      "question": "How does the Vishaka Guidelines define sexual harassment at the workplace?",
+      "expected_answer_keywords": ["Vishaka", "sexual harassment", "workplace", "guidelines"],
+      "expected_case_ids": ["Vishaka v. State of Rajasthan"],
+      "category": "labor_law"
+    },
+    {
+      "id": "q007",
+      "question": "What is the Maneka Gandhi rule on personal liberty and due process?",
+      "expected_answer_keywords": ["Article 21", "procedure established by law", "just fair and reasonable", "Maneka Gandhi"],
+      "expected_case_ids": ["Maneka Gandhi"],
+      "category": "fundamental_rights"
+    },
+    {
+      "id": "q008",
+      "question": "What are the conditions for anticipatory bail under Section 438 CrPC?",
+      "expected_answer_keywords": ["anticipatory bail", "Section 438", "apprehension", "pre-arrest"],
+      "expected_case_ids": [],
+      "category": "criminal_procedure"
+    },
+    {
+      "id": "q009",
+      "question": "How is the basic structure doctrine applied when reviewing constitutional amendments?",
+      "expected_answer_keywords": ["basic structure", "amendment", "judicial review", "constituent power"],
+      "expected_case_ids": ["Kesavananda Bharati", "Indira Nehru Gandhi"],
+      "category": "constitutional_law"
+    },
+    {
+      "id": "q010",
+      "question": "What is the Ratlam Municipality holding on the right to a clean environment?",
+      "expected_answer_keywords": ["municipal", "clean environment", "public nuisance", "directive principles"],
+      "expected_case_ids": ["Ratlam Municipality"],
+      "category": "environmental_law"
+    }
+  ]
+}

@@ -1,0 +1,1472 @@
+{
+  "generated_at": "2026-08-19T19:18:45+0530",
+  "thresholds": {
+    "sim_hard": 0.4,
+    "sim_soft": 0.486,
+    "min_support": 1
+  },
+  "development": {
+    "split": "development",
+    "WARNING": "Thresholds were tuned by inspecting these distributions. These numbers describe fit, not generalisation. Read the held-out split instead.",
+    "answerable_n": 38,
+    "unanswerable_n": 18,
+    "true_positive_rate": 1.0,
+    "false_abstention_rate": 0.0,
+    "true_negative_rate": 0.7778,
+    "false_acceptance_rate": 0.2222,
+    "per_query": [
+      {
+        "query": "What does IPC Section 420 say?",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.5211,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.420",
+          "IPC s.40",
+          "IPC s.50"
+        ]
+      },
+      {
+        "query": "Explain Section 302 of the Indian Penal Code",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.5886,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.302",
+          "IPC s.203",
+          "IPC s.212"
+        ]
+      },
+      {
+        "query": "IPC section 378 definition",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.4915,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.378",
+          "IPC s.40",
+          "IPC s.228A"
+        ]
+      },
+      {
+        "query": "What is Section 124A IPC?",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.5052,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.124A",
+          "IPC s.124",
+          "IPC s.121A"
+        ]
+      },
+      {
+        "query": "Section 498A of IPC",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.542,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.498A",
+          "IPC s.477A",
+          "IPC s.486"
+        ]
+      },
+      {
+        "query": "What is section 511 IPC about?",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.5558,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.511",
+          "IPC s.40",
+          "IPC s.415"
+        ]
+      },
+      {
+        "query": "IPC 304A explain",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.5127,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.304A",
+          "IPC s.300",
+          "IPC s.304B"
+        ]
+      },
+      {
+        "query": "What does Section 34 IPC state?",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.5593,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.34",
+          "IPC s.40",
+          "IPC s.1"
+        ]
+      },
+      {
+        "query": "Section 120B Indian Penal Code",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.5506,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.120B",
+          "IPC s.2",
+          "IPC s.121A"
+        ]
+      },
+      {
+        "query": "What is BNS section 103?",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.4998,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.103",
+          "BNS s.209",
+          "BNS s.1"
+        ]
+      },
+      {
+        "query": "Someone tricked me into transferring my property to them by lying about who they were",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.6155,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.423",
+          "IPC s.421",
+          "BNS s.322"
+        ]
+      },
+      {
+        "query": "What is the punishment for intentionally killing another person?",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.6808,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.302",
+          "IPC s.326",
+          "IPC s.304"
+        ]
+      },
+      {
+        "query": "My neighbour took my bicycle from my garden without asking me",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.5123,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.303",
+          "IPC s.378",
+          "IPC s.403"
+        ]
+      },
+      {
+        "query": "A husband and his family are harassing a woman over dowry demands",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.5684,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.80",
+          "IPC s.304B",
+          "IPC s.498A"
+        ]
+      },
+      {
+        "query": "A driver was speeding recklessly and killed a pedestrian without meaning to",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.5132,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.304A",
+          "IPC s.301",
+          "IPC s.299"
+        ]
+      },
+      {
+        "query": "Two people planned a crime together before committing it",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.5831,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.37",
+          "IPC s.34",
+          "BNS s.61"
+        ]
+      },
+      {
+        "query": "Someone threatened to publish private photos unless I paid them money",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.5536,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.383",
+          "BNS s.77",
+          "BNS s.308"
+        ]
+      },
+      {
+        "query": "A public servant deliberately disobeyed the law intending to harm someone",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.7491,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.198",
+          "IPC s.166",
+          "IPC s.217"
+        ]
+      },
+      {
+        "query": "Someone forged a document to cheat a bank",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.6287,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.335",
+          "BNS s.344",
+          "IPC s.468"
+        ]
+      },
+      {
+        "query": "A group of five people gathered with the common aim of causing a riot",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.5989,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.141",
+          "BNS s.189",
+          "IPC s.151"
+        ]
+      },
+      {
+        "query": "Which provision covers dishonestly inducing a person to hand over property?",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.669,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.320",
+          "IPC s.421",
+          "IPC s.420"
+        ]
+      },
+      {
+        "query": "What provision deals with causing death by a rash or negligent act?",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.7122,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.304A",
+          "BNS s.106",
+          "BNS s.287"
+        ]
+      },
+      {
+        "query": "Which section covers acts done by several persons in furtherance of a common intention?",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.7747,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.34",
+          "IPC s.35",
+          "IPC s.37"
+        ]
+      },
+      {
+        "query": "What does the Code say about attempting to commit an offence but failing?",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.6375,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.511",
+          "IPC s.393",
+          "BNS s.62"
+        ]
+      },
+      {
+        "query": "Which provision defines dishonest misappropriation of movable property?",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.7226,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.403",
+          "BNS s.314",
+          "BNS s.315"
+        ]
+      },
+      {
+        "query": "What is the provision on wrongfully confining a person?",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.7277,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.127",
+          "IPC s.342",
+          "IPC s.344"
+        ]
+      },
+      {
+        "query": "What is the punishment for hurt?",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.6364,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.323",
+          "IPC s.325",
+          "BNS s.118"
+        ]
+      },
+      {
+        "query": "cheating",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.6611,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.417",
+          "IPC s.416",
+          "IPC s.415"
+        ]
+      },
+      {
+        "query": "theft related offences",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.6237,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.303",
+          "IPC s.379",
+          "BNS s.305"
+        ]
+      },
+      {
+        "query": "criminal breach of trust",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.6949,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.316",
+          "IPC s.405",
+          "IPC s.406"
+        ]
+      },
+      {
+        "query": "What is the difference between culpable homicide and murder?",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.6866,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.101",
+          "IPC s.300",
+          "IPC s.299"
+        ]
+      },
+      {
+        "query": "How does the Code distinguish theft, extortion and robbery?",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.6486,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.390",
+          "BNS s.309",
+          "BNS s.303"
+        ]
+      },
+      {
+        "query": "What are the punishments for culpable homicide not amounting to murder and for murder?",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.771,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.304",
+          "BNS s.105",
+          "IPC s.308"
+        ]
+      },
+      {
+        "query": "Explain criminal conspiracy and abetment",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.693,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.109",
+          "IPC s.107",
+          "BNS s.45"
+        ]
+      },
+      {
+        "query": "What is the BNS provision for murder?",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.6459,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.103",
+          "BNS s.109",
+          "BNS s.101"
+        ]
+      },
+      {
+        "query": "Which BNS section deals with cheating and dishonestly inducing delivery of property?",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.6136,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.318",
+          "BNS s.320",
+          "BNS s.317"
+        ]
+      },
+      {
+        "query": "What does the Bharatiya Nyaya Sanhita say about theft?",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.6135,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.317",
+          "BNS s.1",
+          "BNS s.303"
+        ]
+      },
+      {
+        "query": "BNS provision on criminal conspiracy",
+        "group": "answerable",
+        "expected_allow": true,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.6696,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.61",
+          "BNS s.148",
+          "BNS s.60"
+        ]
+      },
+      {
+        "query": "What are the filing requirements for a GST return?",
+        "group": "tax",
+        "expected_allow": false,
+        "allowed": false,
+        "reason": "retrieval quality assessment advises abstention: only 0 candidate(s) cleared the soft threshold of 0.486; weak corroboration; no candidate reached the relevance threshold of 0.486 (best was 0.426) — the corpus does not appear to cover this question",
+        "peak_similarity": 0.4259,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.1",
+          "IPC s.171H",
+          "BNS s.210"
+        ]
+      },
+      {
+        "query": "How do I apply for an Indian passport?",
+        "group": "administrative",
+        "expected_allow": false,
+        "allowed": false,
+        "reason": "retrieval quality assessment advises abstention: only 0 candidate(s) cleared the soft threshold of 0.486; weak corroboration; top candidates are nearly indistinguishable, suggesting no clearly relevant section exists",
+        "peak_similarity": 0.4657,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.171H",
+          "IPC s.153B",
+          "IPC s.140"
+        ]
+      },
+      {
+        "query": "What is the procedure for registering a trademark in India?",
+        "group": "intellectual_property",
+        "expected_allow": false,
+        "allowed": false,
+        "reason": "retrieval quality assessment advises abstention: only 0 candidate(s) cleared the soft threshold of 0.486; weak corroboration; top candidates are nearly indistinguishable, suggesting no clearly relevant section exists",
+        "peak_similarity": 0.4496,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.1",
+          "IPC s.140",
+          "BNS s.168"
+        ]
+      },
+      {
+        "query": "What is the capital gains tax rate on equity shares?",
+        "group": "tax",
+        "expected_allow": false,
+        "allowed": false,
+        "reason": "best passage scored 0.378, below the evidence floor of 0.4",
+        "peak_similarity": 0.3776,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.247",
+          "IPC s.467",
+          "IPC s.154"
+        ]
+      },
+      {
+        "query": "Write me a Python function to reverse a linked list",
+        "group": "unrelated",
+        "expected_allow": false,
+        "allowed": false,
+        "reason": "retrieval quality assessment advises abstention: only 0 candidate(s) cleared the soft threshold of 0.486; weak corroboration; no candidate reached the relevance threshold of 0.486 (best was 0.423) — the corpus does not appear to cover this question",
+        "peak_similarity": 0.423,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.357",
+          "IPC s.348",
+          "IPC s.261"
+        ]
+      },
+      {
+        "query": "How do I renew my passport?",
+        "group": "administrative",
+        "expected_allow": false,
+        "allowed": false,
+        "reason": "retrieval quality assessment advises abstention: only 0 candidate(s) cleared the soft threshold of 0.486; weak corroboration; top candidates are nearly indistinguishable, suggesting no clearly relevant section exists",
+        "peak_similarity": 0.4805,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.489A",
+          "BNS s.337",
+          "IPC s.255"
+        ]
+      },
+      {
+        "query": "What is the best restaurant in Mumbai?",
+        "group": "unrelated",
+        "expected_allow": false,
+        "allowed": false,
+        "reason": "best passage scored 0.352, below the evidence floor of 0.4",
+        "peak_similarity": 0.352,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.275",
+          "IPC s.273",
+          "BNS s.274"
+        ]
+      },
+      {
+        "query": "Explain quantum entanglement",
+        "group": "unrelated",
+        "expected_allow": false,
+        "allowed": false,
+        "reason": "retrieval quality assessment advises abstention: only 0 candidate(s) cleared the soft threshold of 0.486; weak corroboration; top candidates are nearly indistinguishable, suggesting no clearly relevant section exists",
+        "peak_similarity": 0.4166,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.273",
+          "IPC s.271",
+          "BNS s.45"
+        ]
+      },
+      {
+        "query": "What are the grounds for divorce under Hindu law?",
+        "group": "family_law",
+        "expected_allow": false,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.5097,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.357",
+          "IPC s.153A",
+          "BNS s.137"
+        ]
+      },
+      {
+        "query": "How much notice period is required to terminate an employee?",
+        "group": "labour_law",
+        "expected_allow": false,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.5949,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.176",
+          "BNS s.211",
+          "BNS s.293"
+        ]
+      },
+      {
+        "query": "What is the stamp duty on a property sale in Karnataka?",
+        "group": "revenue",
+        "expected_allow": false,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.4883,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.258",
+          "BNS s.219",
+          "IPC s.263A"
+        ]
+      },
+      {
+        "query": "How do I file an income tax return online?",
+        "group": "tax",
+        "expected_allow": false,
+        "allowed": false,
+        "reason": "retrieval quality assessment advises abstention: only 0 candidate(s) cleared the soft threshold of 0.486; weak corroboration; top candidates are nearly indistinguishable, suggesting no clearly relevant section exists",
+        "peak_similarity": 0.474,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.210",
+          "BNS s.337",
+          "IPC s.171H"
+        ]
+      },
+      {
+        "query": "What documents are needed to register a private limited company?",
+        "group": "corporate",
+        "expected_allow": false,
+        "allowed": false,
+        "reason": "retrieval quality assessment advises abstention: only 0 candidate(s) cleared the soft threshold of 0.486; weak corroboration; no candidate reached the relevance threshold of 0.486 (best was 0.461) — the corpus does not appear to cover this question",
+        "peak_similarity": 0.4605,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.337",
+          "BNS s.210",
+          "BNS s.335"
+        ]
+      },
+      {
+        "query": "What is the minimum wage in Maharashtra?",
+        "group": "labour_law",
+        "expected_allow": false,
+        "allowed": false,
+        "reason": "retrieval quality assessment advises abstention: only 0 candidate(s) cleared the soft threshold of 0.486; weak corroboration; top candidates are nearly indistinguishable, suggesting no clearly relevant section exists",
+        "peak_similarity": 0.4097,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.428",
+          "BNS s.187",
+          "IPC s.429"
+        ]
+      },
+      {
+        "query": "How long does a patent last in India?",
+        "group": "intellectual_property",
+        "expected_allow": false,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.5446,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.237",
+          "IPC s.243",
+          "IPC s.75"
+        ]
+      },
+      {
+        "query": "What is the interest rate on a home loan?",
+        "group": "unrelated",
+        "expected_allow": false,
+        "allowed": false,
+        "reason": "retrieval quality assessment advises abstention: only 0 candidate(s) cleared the soft threshold of 0.486; weak corroboration; top candidates are nearly indistinguishable, suggesting no clearly relevant section exists",
+        "peak_similarity": 0.4362,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.329",
+          "IPC s.489A",
+          "IPC s.380"
+        ]
+      },
+      {
+        "query": "How do I get a driving licence?",
+        "group": "administrative",
+        "expected_allow": false,
+        "allowed": false,
+        "reason": "retrieval quality assessment advises abstention: only 0 candidate(s) cleared the soft threshold of 0.486; weak corroboration; top candidates are nearly indistinguishable, suggesting no clearly relevant section exists",
+        "peak_similarity": 0.4723,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.281",
+          "IPC s.279",
+          "IPC s.474"
+        ]
+      },
+      {
+        "query": "What are the visa requirements for visiting Japan?",
+        "group": "unrelated",
+        "expected_allow": false,
+        "allowed": false,
+        "reason": "best passage scored 0.394, below the evidence floor of 0.4",
+        "peak_similarity": 0.3944,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.366B",
+          "BNS s.1",
+          "BNS s.357"
+        ]
+      }
+    ]
+  },
+  "held_out": {
+    "split": "held_out",
+    "note": "Written after the thresholds were fixed and never used to tune them. This is the only unbiased estimate of gate behaviour in the project.",
+    "label_problems": [],
+    "answerable_n": 15,
+    "unanswerable_n": 26,
+    "true_positive_rate": 1.0,
+    "false_abstention_rate": 0.0,
+    "true_negative_rate": 0.4231,
+    "false_acceptance_rate": 0.5769,
+    "by_group": {
+      "answerable": {
+        "n": 15,
+        "correct": 15,
+        "accuracy": 1.0
+      },
+      "near_domain": {
+        "n": 12,
+        "correct": 4,
+        "accuracy": 0.3333
+      },
+      "far_domain": {
+        "n": 6,
+        "correct": 6,
+        "accuracy": 1.0
+      },
+      "adversarial": {
+        "n": 8,
+        "correct": 1,
+        "accuracy": 0.125
+      }
+    },
+    "per_query": [
+      {
+        "query": "What does the Code say about criminal intimidation?",
+        "group": "answerable",
+        "expected_allow": true,
+        "gold_section": "503",
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.6819,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.351",
+          "IPC s.503",
+          "IPC s.506"
+        ]
+      },
+      {
+        "query": "Which provision covers giving false evidence?",
+        "group": "answerable",
+        "expected_allow": true,
+        "gold_section": "191",
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.6868,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.191",
+          "BNS s.227",
+          "IPC s.193"
+        ]
+      },
+      {
+        "query": "What is the provision on kidnapping from lawful guardianship?",
+        "group": "answerable",
+        "expected_allow": true,
+        "gold_section": "361",
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.7075,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.361",
+          "BNS s.137",
+          "IPC s.363"
+        ]
+      },
+      {
+        "query": "Explain the offence of mischief",
+        "group": "answerable",
+        "expected_allow": true,
+        "gold_section": "425",
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.6885,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.425",
+          "IPC s.426",
+          "BNS s.324"
+        ]
+      },
+      {
+        "query": "What does IPC Section 141 define?",
+        "group": "answerable",
+        "expected_allow": true,
+        "gold_section": "141",
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.5373,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.141",
+          "IPC s.151",
+          "IPC s.142"
+        ]
+      },
+      {
+        "query": "Which section deals with wrongful restraint?",
+        "group": "answerable",
+        "expected_allow": true,
+        "gold_section": "339",
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.6514,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.126",
+          "IPC s.339",
+          "IPC s.341"
+        ]
+      },
+      {
+        "query": "What is the punishment for house-trespass?",
+        "group": "answerable",
+        "expected_allow": true,
+        "gold_section": "448",
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.759,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.332",
+          "IPC s.449",
+          "IPC s.448"
+        ]
+      },
+      {
+        "query": "Which provision defines counterfeiting?",
+        "group": "answerable",
+        "expected_allow": true,
+        "gold_section": "28",
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.6443,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.28",
+          "IPC s.475",
+          "IPC s.476"
+        ]
+      },
+      {
+        "query": "What does the Code say about abetment of suicide?",
+        "group": "answerable",
+        "expected_allow": true,
+        "gold_section": "306",
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.6409,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.306",
+          "BNS s.108",
+          "BNS s.107"
+        ]
+      },
+      {
+        "query": "Which section covers defamation?",
+        "group": "answerable",
+        "expected_allow": true,
+        "gold_section": "499",
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.632,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.356",
+          "IPC s.499",
+          "IPC s.500"
+        ]
+      },
+      {
+        "query": "What is the offence of criminal misappropriation of property?",
+        "group": "answerable",
+        "expected_allow": true,
+        "gold_section": "403",
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.673,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.403",
+          "BNS s.314",
+          "BNS s.315"
+        ]
+      },
+      {
+        "query": "Explain what constitutes an unlawful assembly",
+        "group": "answerable",
+        "expected_allow": true,
+        "gold_section": "141",
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.7502,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.189",
+          "IPC s.141",
+          "IPC s.142"
+        ]
+      },
+      {
+        "query": "Which provision deals with rioting armed with a deadly weapon?",
+        "group": "answerable",
+        "expected_allow": true,
+        "gold_section": "148",
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.6732,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.148",
+          "BNS s.191",
+          "IPC s.146"
+        ]
+      },
+      {
+        "query": "What does the Code provide about forgery of a valuable security?",
+        "group": "answerable",
+        "expected_allow": true,
+        "gold_section": "467",
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.6316,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.467",
+          "BNS s.338",
+          "IPC s.475"
+        ]
+      },
+      {
+        "query": "Which section addresses public nuisance?",
+        "group": "answerable",
+        "expected_allow": true,
+        "gold_section": "268",
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.6249,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.270",
+          "IPC s.268",
+          "BNS s.292"
+        ]
+      },
+      {
+        "query": "What is the limitation period for filing a civil suit for recovery of money?",
+        "group": "near_domain",
+        "expected_allow": false,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.5472,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.331",
+          "IPC s.348",
+          "BNS s.120"
+        ]
+      },
+      {
+        "query": "How is maintenance calculated under Section 125 of the CrPC?",
+        "group": "near_domain",
+        "expected_allow": false,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.4737,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.125",
+          "BNS s.125",
+          "IPC s.127"
+        ]
+      },
+      {
+        "query": "What are the conditions for granting anticipatory bail?",
+        "group": "near_domain",
+        "expected_allow": false,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.5435,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.269",
+          "BNS s.308",
+          "IPC s.385"
+        ]
+      },
+      {
+        "query": "What is the procedure for filing a consumer complaint?",
+        "group": "near_domain",
+        "expected_allow": false,
+        "allowed": false,
+        "reason": "retrieval quality assessment advises abstention: only 0 candidate(s) cleared the soft threshold of 0.486; weak corroboration; top candidates are nearly indistinguishable, suggesting no clearly relevant section exists",
+        "peak_similarity": 0.4847,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.357",
+          "BNS s.210",
+          "BNS s.350"
+        ]
+      },
+      {
+        "query": "How does one register a partnership firm in India?",
+        "group": "near_domain",
+        "expected_allow": false,
+        "allowed": false,
+        "reason": "retrieval quality assessment advises abstention: only 0 candidate(s) cleared the soft threshold of 0.486; weak corroboration; top candidates are nearly indistinguishable, suggesting no clearly relevant section exists",
+        "peak_similarity": 0.4297,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.337",
+          "BNS s.1",
+          "IPC s.121A"
+        ]
+      },
+      {
+        "query": "What are the rights of a tenant against eviction?",
+        "group": "near_domain",
+        "expected_allow": false,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.5237,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.380",
+          "BNS s.193",
+          "IPC s.156"
+        ]
+      },
+      {
+        "query": "What is the process for obtaining a succession certificate?",
+        "group": "near_domain",
+        "expected_allow": false,
+        "allowed": false,
+        "reason": "retrieval quality assessment advises abstention: only 0 candidate(s) cleared the soft threshold of 0.486; weak corroboration; no candidate reached the relevance threshold of 0.486 (best was 0.473) — the corpus does not appear to cover this question",
+        "peak_similarity": 0.4733,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.467",
+          "IPC s.412",
+          "BNS s.337"
+        ]
+      },
+      {
+        "query": "How is stamp duty computed on a gift deed?",
+        "group": "near_domain",
+        "expected_allow": false,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.5093,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.258",
+          "IPC s.257",
+          "IPC s.255"
+        ]
+      },
+      {
+        "query": "What are the statutory dues payable under the Employees Provident Fund Act?",
+        "group": "near_domain",
+        "expected_allow": false,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.516,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.405",
+          "BNS s.316",
+          "BNS s.210"
+        ]
+      },
+      {
+        "query": "What are the requirements for a valid will under Indian succession law?",
+        "group": "near_domain",
+        "expected_allow": false,
+        "allowed": false,
+        "reason": "retrieval quality assessment advises abstention: only 0 candidate(s) cleared the soft threshold of 0.486; weak corroboration; no candidate reached the relevance threshold of 0.486 (best was 0.484) — the corpus does not appear to cover this question",
+        "peak_similarity": 0.4844,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.31",
+          "BNS s.1",
+          "IPC s.477"
+        ]
+      },
+      {
+        "query": "How long does copyright protection last in India?",
+        "group": "near_domain",
+        "expected_allow": false,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.5142,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.126",
+          "IPC s.363",
+          "IPC s.366B"
+        ]
+      },
+      {
+        "query": "What compensation is payable under the Motor Vehicles Act for an accident?",
+        "group": "near_domain",
+        "expected_allow": false,
+        "allowed": true,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "peak_similarity": 0.5476,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.331",
+          "IPC s.326",
+          "BNS s.122"
+        ]
+      },
+      {
+        "query": "What is the boiling point of water at sea level?",
+        "group": "far_domain",
+        "expected_allow": false,
+        "allowed": false,
+        "reason": "retrieval quality assessment advises abstention: only 0 candidate(s) cleared the soft threshold of 0.486; weak corroboration; top candidates are nearly indistinguishable, suggesting no clearly relevant section exists",
+        "peak_similarity": 0.4031,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.279",
+          "IPC s.277",
+          "BNS s.326"
+        ]
+      },
+      {
+        "query": "Write a SQL query to join two tables",
+        "group": "far_domain",
+        "expected_allow": false,
+        "allowed": false,
+        "reason": "best passage scored 0.398, below the evidence floor of 0.4",
+        "peak_similarity": 0.3983,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.37",
+          "IPC s.34",
+          "IPC s.477A"
+        ]
+      },
+      {
+        "query": "Who won the cricket world cup in 2011?",
+        "group": "far_domain",
+        "expected_allow": false,
+        "allowed": false,
+        "reason": "best passage scored 0.363, below the evidence floor of 0.4",
+        "peak_similarity": 0.3627,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.18",
+          "IPC s.121A",
+          "IPC s.124A"
+        ]
+      },
+      {
+        "query": "How do I bake sourdough bread?",
+        "group": "far_domain",
+        "expected_allow": false,
+        "allowed": false,
+        "reason": "best passage scored 0.334, below the evidence floor of 0.4",
+        "peak_similarity": 0.3341,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.273",
+          "BNS s.275",
+          "IPC s.304B"
+        ]
+      },
+      {
+        "query": "What is the population of Bengaluru?",
+        "group": "far_domain",
+        "expected_allow": false,
+        "allowed": false,
+        "reason": "best passage scored 0.370, below the evidence floor of 0.4",
+        "peak_similarity": 0.3703,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.1",
+          "BNS s.152",
+          "BNS s.280"
+        ]
+      },
+      {
+        "query": "Explain how a transformer neural network works",
+        "group": "far_domain",
+        "expected_allow": false,
+        "allowed": false,
+        "reason": "retrieval quality assessment advises abstention: only 0 candidate(s) cleared the soft threshold of 0.486; weak corroboration; top candidates are nearly indistinguishable, suggesting no clearly relevant section exists",
+        "peak_similarity": 0.4111,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.303",
+          "BNS s.143",
+          "BNS s.46"
+        ]
+      },
+      {
+        "query": "What is the punishment under IPC Section 999?",
+        "group": "adversarial",
+        "expected_allow": false,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "allowed": true,
+        "peak_similarity": 0.5929,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.329",
+          "IPC s.53",
+          "IPC s.124A"
+        ]
+      },
+      {
+        "query": "Explain IPC Section 888 on cyber fraud",
+        "group": "adversarial",
+        "expected_allow": false,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "allowed": true,
+        "peak_similarity": 0.5676,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.475",
+          "IPC s.415",
+          "IPC s.198"
+        ]
+      },
+      {
+        "query": "What does BNS Section 1200 say?",
+        "group": "adversarial",
+        "expected_allow": false,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "allowed": true,
+        "peak_similarity": 0.4947,
+        "evidence_count": 5,
+        "top_sections": [
+          "BNS s.1",
+          "BNS s.212",
+          "BNS s.152"
+        ]
+      },
+      {
+        "query": "Which IPC section covers income tax evasion?",
+        "group": "adversarial",
+        "expected_allow": false,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "allowed": true,
+        "peak_similarity": 0.5413,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.171H",
+          "IPC s.40",
+          "IPC s.477A"
+        ]
+      },
+      {
+        "query": "What did the Supreme Court hold in Sharma v. Union of India (2019) about IPC 420?",
+        "group": "adversarial",
+        "expected_allow": false,
+        "reason": "retrieval quality assessment advises abstention: the query names section 420 but that section was not retrieved; only 0 candidate(s) cleared the soft threshold of 0.486; weak corroboration",
+        "allowed": false,
+        "peak_similarity": 0.4444,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.18",
+          "IPC s.153B",
+          "IPC s.121"
+        ]
+      },
+      {
+        "query": "Since IPC Section 302 was renumbered to BNS Section 302, what changed?",
+        "group": "adversarial",
+        "expected_allow": false,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "allowed": true,
+        "peak_similarity": 0.4562,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.302",
+          "BNS s.302",
+          "IPC s.40"
+        ]
+      },
+      {
+        "query": "Under IPC Section 420, what is the mandatory minimum sentence of ten years?",
+        "group": "adversarial",
+        "expected_allow": false,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "allowed": true,
+        "peak_similarity": 0.539,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.420",
+          "IPC s.438",
+          "IPC s.222"
+        ]
+      },
+      {
+        "query": "What does the Indian Penal Code say about GST evasion penalties?",
+        "group": "adversarial",
+        "expected_allow": false,
+        "reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "allowed": true,
+        "peak_similarity": 0.5639,
+        "evidence_count": 5,
+        "top_sections": [
+          "IPC s.216",
+          "IPC s.2",
+          "IPC s.171H"
+        ]
+      }
+    ]
+  },
+  "evidence_removal": {
+    "cases": 3,
+    "blocked_before_llm": 2,
+    "llm_invocations": 1,
+    "interpretation": "Where gate_allowed_generation is false the LLM is never called, so a pretrained-knowledge answer is impossible by construction rather than by instruction. Where it is true the gate did NOT stop it, and only the closed-book prompt and the verifier remain.",
+    "per_case": [
+      {
+        "query": "What does IPC Section 420 deal with?",
+        "restrict_to": "BNS",
+        "note": "IPC question, IPC excluded from retrieval",
+        "gate_allowed_generation": false,
+        "llm_would_be_invoked": false,
+        "gate_reason": "retrieval quality assessment advises abstention: the query names section 420 but that section was not retrieved; only 0 candidate(s) cleared the soft threshold of 0.486; weak corroboration",
+        "retrieved_laws": [
+          "BNS"
+        ],
+        "peak_similarity": 0.4109
+      },
+      {
+        "query": "What is the punishment under IPC Section 302?",
+        "restrict_to": "BNS",
+        "note": "IPC question, IPC excluded from retrieval",
+        "gate_allowed_generation": true,
+        "llm_would_be_invoked": true,
+        "gate_reason": "sufficient retrieved evidence to attempt a grounded answer",
+        "retrieved_laws": [
+          "BNS"
+        ],
+        "peak_similarity": 0.5622
+      },
+      {
+        "query": "Which BNS section covers cheating?",
+        "restrict_to": "IPC",
+        "note": "BNS question, BNS excluded from retrieval",
+        "gate_allowed_generation": false,
+        "llm_would_be_invoked": false,
+        "gate_reason": "retrieval quality assessment advises abstention: only 0 candidate(s) cleared the soft threshold of 0.486; weak corroboration; no candidate reached the relevance threshold of 0.486 (best was 0.469) — the corpus does not appear to cover this question",
+        "retrieved_laws": [
+          "IPC"
+        ],
+        "peak_similarity": 0.4692
+      }
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+query_id,category,query,gold_sections,gold_titles
+d01,direct_section,What does IPC Section 420 say?,IPC s.420,Cheating and dishonestly inducing delivery of property
+d02,direct_section,Explain Section 302 of the Indian Penal Code,IPC s.302,Punishment for murder
+d03,direct_section,IPC section 378 definition,IPC s.378,Theft
+d04,direct_section,What is Section 124A IPC?,IPC s.124A,Sedition
+d05,direct_section,Section 498A of IPC,IPC s.498A,Husband or relative of husband of a woman subjecting her to cruelty
+d06,direct_section,What is section 511 IPC about?,IPC s.511,Punishment for attempting to commit offences punishable with imprisonment for life or other imprisonment
+d07,direct_section,IPC 304A explain,IPC s.304A,Causing death by negligence
+d08,direct_section,What does Section 34 IPC state?,IPC s.34,Acts done by several persons in futherance of common intention
+d09,direct_section,Section 120B Indian Penal Code,IPC s.120B,Punishment of criminal conspiracy
+d10,direct_section,What is BNS section 103?,BNS s.103,Punishment for murder
+n01,natural_language,Someone tricked me into transferring my property to them by lying about who they were,IPC s.420,Cheating and dishonestly inducing delivery of property
+n02,natural_language,What is the punishment for intentionally killing another person?,IPC s.302,Punishment for murder
+n03,natural_language,My neighbour took my bicycle from my garden without asking me,IPC s.378; IPC s.379,Theft; Punishment for theft
+n04,natural_language,A husband and his family are harassing a woman over dowry demands,IPC s.498A,Husband or relative of husband of a woman subjecting her to cruelty
+n05,natural_language,A driver was speeding recklessly and killed a pedestrian without meaning to,IPC s.304A,Causing death by negligence
+n06,natural_language,Two people planned a crime together before committing it,IPC s.120A; IPC s.120B,Definition of criminal conspiracy; Punishment of criminal conspiracy
+n07,natural_language,Someone threatened to publish private photos unless I paid them money,IPC s.383; IPC s.384,Extortion; Punishment for extortion
+n08,natural_language,A public servant deliberately disobeyed the law intending to harm someone,IPC s.166,"Public servant disobeying law, with intent to cause injury to any person"
+n09,natural_language,Someone forged a document to cheat a bank,IPC s.463; IPC s.465,Forgery; Punishment for forgery
+n10,natural_language,A group of five people gathered with the common aim of causing a riot,IPC s.141; IPC s.146,Unlawful assembly; Rioting
+p01,paraphrase,Which provision covers dishonestly inducing a person to hand over property?,IPC s.420,Cheating and dishonestly inducing delivery of property
+p02,paraphrase,What provision deals with causing death by a rash or negligent act?,IPC s.304A,Causing death by negligence
+p03,paraphrase,Which section covers acts done by several persons in furtherance of a common intention?,IPC s.34,Acts done by several persons in futherance of common intention
+p04,paraphrase,What does the Code say about attempting to commit an offence but failing?,IPC s.511,Punishment for attempting to commit offences punishable with imprisonment for life or other imprisonment
+p05,paraphrase,Which provision defines dishonest misappropriation of movable property?,IPC s.403,Dishonest misappropriation of property
+p06,paraphrase,What is the provision on wrongfully confining a person?,IPC s.340; IPC s.342,Wrongful confinement; Punishment for wrongful confinement
+a01,ambiguous,What is the punishment for hurt?,IPC s.319; IPC s.323; IPC s.325,Hurt; Punishment for voluntarily causing hurt; Punishment for voluntarily causing grievous hurt
+a02,ambiguous,cheating,IPC s.415; IPC s.417; IPC s.420,Cheating; Punishment for cheating; Cheating and dishonestly inducing delivery of property
+a03,ambiguous,theft related offences,IPC s.378; IPC s.379; IPC s.380,"Theft; Punishment for theft; Theft in dwelling house, etc"
+a04,ambiguous,criminal breach of trust,IPC s.405; IPC s.406,Criminal breach of trust; Punishment for criminal breach of trust
+m01,multi_section,What is the difference between culpable homicide and murder?,IPC s.299; IPC s.300,Culpable homicide; Murder
+m02,multi_section,"How does the Code distinguish theft, extortion and robbery?",IPC s.378; IPC s.383; IPC s.390,Theft; Extortion; Robbery
+m03,multi_section,What are the punishments for culpable homicide not amounting to murder and for murder?,IPC s.302; IPC s.304,Punishment for murder; Punishment for culpable homicide not amounting to murder
+m04,multi_section,Explain criminal conspiracy and abetment,IPC s.107; IPC s.120A; IPC s.120B,Abetment of a thing; Definition of criminal conspiracy; Punishment of criminal conspiracy
+o01,out_of_corpus,What are the filing requirements for a GST return?,,
+o02,out_of_corpus,How do I apply for an Indian passport?,,
+o03,out_of_corpus,What is the procedure for registering a trademark in India?,,
+o04,out_of_corpus,What is the capital gains tax rate on equity shares?,,
+o05,out_of_corpus,Write me a Python function to reverse a linked list,,
+b01,ipc_bns_mapping,What is the BNS provision for murder?,BNS s.103,Punishment for murder
+b02,ipc_bns_mapping,Which BNS section deals with cheating and dishonestly inducing delivery of property?,BNS s.318,Cheating
+b03,ipc_bns_mapping,What does the Bharatiya Nyaya Sanhita say about theft?,BNS s.303,Theft
+b04,ipc_bns_mapping,BNS provision on criminal conspiracy,BNS s.61,Criminal conspiracy

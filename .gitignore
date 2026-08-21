@@ -1,0 +1,54 @@
+# Python
+venv/
+backend/venv/
+__pycache__/
+*.pyc
+.env
+
+# AI / Generated Data
+processed-json/
+processed_json/
+chroma_db/
+faiss_index/
+
+# Node
+node_modules/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+
+# Runtime PID files and logs
+.run/
+
+# ── Corpus data (reproducible; not source) ──────────────────────────────────
+# Every judgment can be re-fetched from its `source_url`, and the candidate
+# ledger records what was examined and why it was kept or rejected. Committing
+# the artefacts would add ~750 MB of binaries that git cannot diff.
+#   rebuild:  python -m backend.ingestion.fetch_judgments --target 1500
+#             ./scripts/index-judgments.sh
+data/raw/judgments/pdf/
+data/raw/judgments/*.parquet
+data/raw/statutes/
+data/processed/judgments_sc/judgments.json
+data/processed/judgments_sc/candidate_ledger.json
+data/processed/judgments_sc/_backup_260/
+data/processed/judgments_sc/_baseline/
+data/processed/judgments/
+data/processed/chunks/
+data/processed/statutes/
+
+# Vector stores, caches and build output
+outputs/
+frontend/dist/
+.vite/
+.pytest_cache/
+
+# Source PDFs (licensed material, not ours to redistribute)
+Dataset/
+*.PDF
+
+# DVC local object cache (content, not pointers)
+.dvc/cache/

@@ -1,0 +1,106 @@
+# Legal RAG Pro — Docker Compose
+# Use: docker compose up -d   (note: no hyphen — requires Docker Compose V2)
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: legal_rag_backend
+    command: uvicorn backend.main:app --host 0.0.0.0 --port 8001
+    ports:
+      - "8001:8001"
+    environment:
+      - REDIS_URL=redis://redis:6379
+    volumes:
+      - ./:/app
+    depends_on:
+      redis:
+        condition: service_healthy
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: legal_rag_frontend
+    command: npm run dev -- --host 0.0.0.0 --port 5173
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend:/app
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  # ── Redis (RQ job broker + optional cache) ─────────────────────────────────
+  redis:
+    image: redis:7-alpine
+    container_name: legal_rag_redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  # ── RQ Delta Worker (incremental Chroma upsert) ───────────────────────────
+  rq-worker:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile.worker
+    container_name: legal_rag_worker
+    command: rq worker legal-rag --url redis://redis:6379
+    depends_on:
+      redis:
+        condition: service_healthy
+      backend:
+        condition: service_started
+    volumes:
+      - ./backend:/app
+      - ./Dataset:/data/input
+      - ./processed_json:/data/processed
+      - ./outputs:/data/outputs
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - JSON_FOLDER=/data/processed
+      - PYTHONPATH=/app
+    restart: unless-stopped
+
+  # ── Prometheus (scrapes /metrics from FastAPI) ────────────────────────────
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: legal_rag_prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml:ro
+      - prometheus_data:/prometheus
+    command:
+      - '--config.file=/etc/prometheus/prometheus.yml'
+      - '--storage.tsdb.retention.time=7d'
+    restart: unless-stopped
+
+  # ── Grafana (dashboards at http://localhost:3000) ─────────────────────────
+  grafana:
+    image: grafana/grafana:latest
+    container_name: legal_rag_grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+      - GF_USERS_ALLOW_SIGN_UP=false
+    volumes:
+      - grafana_data:/var/lib/grafana
+    depends_on:
+      - prometheus
+    restart: unless-stopped
+
+volumes:
+  redis_data:
+  prometheus_data:
+  grafana_data:

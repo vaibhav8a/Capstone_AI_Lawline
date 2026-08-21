@@ -1,0 +1,503 @@
+{
+  "generated_at": "2026-08-19T19:10:20+0530",
+  "answerable_n": 38,
+  "unanswerable_n": 18,
+  "false_abstentions": 0,
+  "false_abstention_queries": [],
+  "missed_abstentions": 4,
+  "missed_abstention_queries": [
+    "What are the grounds for divorce under Hindu law?",
+    "How much notice period is required to terminate an employee?",
+    "What is the stamp duty on a property sale in Karnataka?",
+    "How long does a patent last in India?"
+  ],
+  "peak_similarity": {
+    "answerable_min": 0.4915,
+    "answerable_median": 0.6196,
+    "unanswerable_max": 0.5949,
+    "unanswerable_median": 0.4551,
+    "separable": false,
+    "gap": -0.1034
+  },
+  "score_margin": {
+    "answerable_min": 0.0011,
+    "unanswerable_max": 0.0427,
+    "separable": false,
+    "gap": -0.0416,
+    "conclusion": "Does not separate answerable from unanswerable queries. Removed from the abstention decision after this measurement."
+  },
+  "thresholds_used": {
+    "sim_hard": 0.4,
+    "sim_soft": 0.486,
+    "min_support": 1
+  },
+  "VALIDITY_WARNING": "Thresholds were selected by inspecting these distributions. No held-out set exists, so this measures fit, not generalisation. The separating gap is a few hundredths of a similarity point and is model-dependent \u2014 bge-base showed no separation at all. Treat abstention as a research feature, not a validated classifier.",
+  "per_query": [
+    {
+      "id": "d01",
+      "query": "What does IPC Section 420 say?",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.5211,
+      "score_margin": 0.0241
+    },
+    {
+      "id": "d02",
+      "query": "Explain Section 302 of the Indian Penal Code",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.5886,
+      "score_margin": 0.0046
+    },
+    {
+      "id": "d03",
+      "query": "IPC section 378 definition",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.4915,
+      "score_margin": 0.0179
+    },
+    {
+      "id": "d04",
+      "query": "What is Section 124A IPC?",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.5052,
+      "score_margin": 0.024
+    },
+    {
+      "id": "d05",
+      "query": "Section 498A of IPC",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.542,
+      "score_margin": 0.0279
+    },
+    {
+      "id": "d06",
+      "query": "What is section 511 IPC about?",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.5558,
+      "score_margin": 0.0467
+    },
+    {
+      "id": "d07",
+      "query": "IPC 304A explain",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.5127,
+      "score_margin": 0.0331
+    },
+    {
+      "id": "d08",
+      "query": "What does Section 34 IPC state?",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.5593,
+      "score_margin": 0.0685
+    },
+    {
+      "id": "d09",
+      "query": "Section 120B Indian Penal Code",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.5506,
+      "score_margin": 0.0177
+    },
+    {
+      "id": "d10",
+      "query": "What is BNS section 103?",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.4998,
+      "score_margin": 0.0121
+    },
+    {
+      "id": "n01",
+      "query": "Someone tricked me into transferring my property to them by lying about who they were",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.6155,
+      "score_margin": 0.0111
+    },
+    {
+      "id": "n02",
+      "query": "What is the punishment for intentionally killing another person?",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.6808,
+      "score_margin": 0.018
+    },
+    {
+      "id": "n03",
+      "query": "My neighbour took my bicycle from my garden without asking me",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.5123,
+      "score_margin": 0.0516
+    },
+    {
+      "id": "n04",
+      "query": "A husband and his family are harassing a woman over dowry demands",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.5684,
+      "score_margin": 0.011
+    },
+    {
+      "id": "n05",
+      "query": "A driver was speeding recklessly and killed a pedestrian without meaning to",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.5132,
+      "score_margin": 0.0072
+    },
+    {
+      "id": "n06",
+      "query": "Two people planned a crime together before committing it",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.5831,
+      "score_margin": 0.008
+    },
+    {
+      "id": "n07",
+      "query": "Someone threatened to publish private photos unless I paid them money",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.5536,
+      "score_margin": 0.0217
+    },
+    {
+      "id": "n08",
+      "query": "A public servant deliberately disobeyed the law intending to harm someone",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.7491,
+      "score_margin": 0.0443
+    },
+    {
+      "id": "n09",
+      "query": "Someone forged a document to cheat a bank",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.6287,
+      "score_margin": 0.0104
+    },
+    {
+      "id": "n10",
+      "query": "A group of five people gathered with the common aim of causing a riot",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.5989,
+      "score_margin": 0.0339
+    },
+    {
+      "id": "p01",
+      "query": "Which provision covers dishonestly inducing a person to hand over property?",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.669,
+      "score_margin": 0.0169
+    },
+    {
+      "id": "p02",
+      "query": "What provision deals with causing death by a rash or negligent act?",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.7122,
+      "score_margin": 0.1195
+    },
+    {
+      "id": "p03",
+      "query": "Which section covers acts done by several persons in furtherance of a common intention?",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.7747,
+      "score_margin": 0.1699
+    },
+    {
+      "id": "p04",
+      "query": "What does the Code say about attempting to commit an offence but failing?",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.6375,
+      "score_margin": 0.0736
+    },
+    {
+      "id": "p05",
+      "query": "Which provision defines dishonest misappropriation of movable property?",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.7226,
+      "score_margin": 0.0414
+    },
+    {
+      "id": "p06",
+      "query": "What is the provision on wrongfully confining a person?",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.7277,
+      "score_margin": 0.0242
+    },
+    {
+      "id": "a01",
+      "query": "What is the punishment for hurt?",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.6364,
+      "score_margin": 0.0165
+    },
+    {
+      "id": "a02",
+      "query": "cheating",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.6611,
+      "score_margin": 0.0234
+    },
+    {
+      "id": "a03",
+      "query": "theft related offences",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.6237,
+      "score_margin": 0.0011
+    },
+    {
+      "id": "a04",
+      "query": "criminal breach of trust",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.6949,
+      "score_margin": 0.0154
+    },
+    {
+      "id": "m01",
+      "query": "What is the difference between culpable homicide and murder?",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.6866,
+      "score_margin": 0.0163
+    },
+    {
+      "id": "m02",
+      "query": "How does the Code distinguish theft, extortion and robbery?",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.6486,
+      "score_margin": 0.092
+    },
+    {
+      "id": "m03",
+      "query": "What are the punishments for culpable homicide not amounting to murder and for murder?",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.771,
+      "score_margin": 0.0814
+    },
+    {
+      "id": "m04",
+      "query": "Explain criminal conspiracy and abetment",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.693,
+      "score_margin": 0.0467
+    },
+    {
+      "id": "b01",
+      "query": "What is the BNS provision for murder?",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.6459,
+      "score_margin": 0.0269
+    },
+    {
+      "id": "b02",
+      "query": "Which BNS section deals with cheating and dishonestly inducing delivery of property?",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.6136,
+      "score_margin": 0.022
+    },
+    {
+      "id": "b03",
+      "query": "What does the Bharatiya Nyaya Sanhita say about theft?",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.6135,
+      "score_margin": 0.0288
+    },
+    {
+      "id": "b04",
+      "query": "BNS provision on criminal conspiracy",
+      "answerable": true,
+      "abstained": false,
+      "peak_similarity": 0.6696,
+      "score_margin": 0.0787
+    },
+    {
+      "id": "x01",
+      "query": "What are the filing requirements for a GST return?",
+      "answerable": false,
+      "domain": "tax",
+      "abstained": true,
+      "peak_similarity": 0.4259,
+      "score_margin": 0.0229
+    },
+    {
+      "id": "x02",
+      "query": "How do I apply for an Indian passport?",
+      "answerable": false,
+      "domain": "administrative",
+      "abstained": true,
+      "peak_similarity": 0.4657,
+      "score_margin": 0.0026
+    },
+    {
+      "id": "x03",
+      "query": "What is the procedure for registering a trademark in India?",
+      "answerable": false,
+      "domain": "intellectual_property",
+      "abstained": true,
+      "peak_similarity": 0.4496,
+      "score_margin": 0.0171
+    },
+    {
+      "id": "x04",
+      "query": "What is the capital gains tax rate on equity shares?",
+      "answerable": false,
+      "domain": "tax",
+      "abstained": true,
+      "peak_similarity": 0.3776,
+      "score_margin": 0.0094
+    },
+    {
+      "id": "x05",
+      "query": "Write me a Python function to reverse a linked list",
+      "answerable": false,
+      "domain": "unrelated",
+      "abstained": true,
+      "peak_similarity": 0.423,
+      "score_margin": 0.0298
+    },
+    {
+      "id": "x06",
+      "query": "How do I renew my passport?",
+      "answerable": false,
+      "domain": "administrative",
+      "abstained": true,
+      "peak_similarity": 0.4805,
+      "score_margin": 0.0117
+    },
+    {
+      "id": "x07",
+      "query": "What is the best restaurant in Mumbai?",
+      "answerable": false,
+      "domain": "unrelated",
+      "abstained": true,
+      "peak_similarity": 0.352,
+      "score_margin": 0.0183
+    },
+    {
+      "id": "x08",
+      "query": "Explain quantum entanglement",
+      "answerable": false,
+      "domain": "unrelated",
+      "abstained": true,
+      "peak_similarity": 0.4166,
+      "score_margin": 0.0013
+    },
+    {
+      "id": "x09",
+      "query": "What are the grounds for divorce under Hindu law?",
+      "answerable": false,
+      "domain": "family_law",
+      "abstained": false,
+      "peak_similarity": 0.5097,
+      "score_margin": 0.0306
+    },
+    {
+      "id": "x10",
+      "query": "How much notice period is required to terminate an employee?",
+      "answerable": false,
+      "domain": "labour_law",
+      "abstained": false,
+      "peak_similarity": 0.5949,
+      "score_margin": 0.0427
+    },
+    {
+      "id": "x11",
+      "query": "What is the stamp duty on a property sale in Karnataka?",
+      "answerable": false,
+      "domain": "revenue",
+      "abstained": false,
+      "peak_similarity": 0.4883,
+      "score_margin": 0.0051
+    },
+    {
+      "id": "x12",
+      "query": "How do I file an income tax return online?",
+      "answerable": false,
+      "domain": "tax",
+      "abstained": true,
+      "peak_similarity": 0.474,
+      "score_margin": 0.0072
+    },
+    {
+      "id": "x13",
+      "query": "What documents are needed to register a private limited company?",
+      "answerable": false,
+      "domain": "corporate",
+      "abstained": true,
+      "peak_similarity": 0.4605,
+      "score_margin": 0.0275
+    },
+    {
+      "id": "x14",
+      "query": "What is the minimum wage in Maharashtra?",
+      "answerable": false,
+      "domain": "labour_law",
+      "abstained": true,
+      "peak_similarity": 0.4097,
+      "score_margin": 0.0113
+    },
+    {
+      "id": "x15",
+      "query": "How long does a patent last in India?",
+      "answerable": false,
+      "domain": "intellectual_property",
+      "abstained": false,
+      "peak_similarity": 0.5446,
+      "score_margin": 0.0108
+    },
+    {
+      "id": "x16",
+      "query": "What is the interest rate on a home loan?",
+      "answerable": false,
+      "domain": "unrelated",
+      "abstained": true,
+      "peak_similarity": 0.4362,
+      "score_margin": 0.0017
+    },
+    {
+      "id": "x17",
+      "query": "How do I get a driving licence?",
+      "answerable": false,
+      "domain": "administrative",
+      "abstained": true,
+      "peak_similarity": 0.4723,
+      "score_margin": 0.0142
+    },
+    {
+      "id": "x18",
+      "query": "What are the visa requirements for visiting Japan?",
+      "answerable": false,
+      "domain": "unrelated",
+      "abstained": true,
+      "peak_similarity": 0.3944,
+      "score_margin": 0.0328
+    }
+  ]
+}

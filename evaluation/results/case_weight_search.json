@@ -1,0 +1,102 @@
+{
+  "split": "DEV only \u2014 held-out never loaded during tuning",
+  "objective": "ndcg@5",
+  "n_trials": 24,
+  "best_weights": {
+    "semantic": 1.0,
+    "section_match": 0.25,
+    "law_match": 0.0,
+    "cross_reference": 0.0
+  },
+  "best_ndcg_at_5": 0.6643,
+  "top_trials": [
+    {
+      "weights": {
+        "semantic": 1.0,
+        "section_match": 0.25,
+        "law_match": 0.0,
+        "cross_reference": 0.0
+      },
+      "ndcg_at_5": 0.6643,
+      "recall_at_5_capped": 0.6,
+      "mrr": 0.875
+    },
+    {
+      "weights": {
+        "semantic": 1.0,
+        "section_match": 0.25,
+        "law_match": 0.15,
+        "cross_reference": 0.0
+      },
+      "ndcg_at_5": 0.6643,
+      "recall_at_5_capped": 0.6,
+      "mrr": 0.875
+    },
+    {
+      "weights": {
+        "semantic": 1.0,
+        "section_match": 0.25,
+        "law_match": 0.0,
+        "cross_reference": 0.25
+      },
+      "ndcg_at_5": 0.6643,
+      "recall_at_5_capped": 0.6,
+      "mrr": 0.875
+    },
+    {
+      "weights": {
+        "semantic": 1.0,
+        "section_match": 0.25,
+        "law_match": 0.15,
+        "cross_reference": 0.25
+      },
+      "ndcg_at_5": 0.6643,
+      "recall_at_5_capped": 0.6,
+      "mrr": 0.875
+    },
+    {
+      "weights": {
+        "semantic": 1.0,
+        "section_match": 0.25,
+        "law_match": 0.0,
+        "cross_reference": 0.5
+      },
+      "ndcg_at_5": 0.6643,
+      "recall_at_5_capped": 0.6,
+      "mrr": 0.875
+    },
+    {
+      "weights": {
+        "semantic": 1.0,
+        "section_match": 0.25,
+        "law_match": 0.15,
+        "cross_reference": 0.5
+      },
+      "ndcg_at_5": 0.6643,
+      "recall_at_5_capped": 0.6,
+      "mrr": 0.875
+    },
+    {
+      "weights": {
+        "semantic": 1.0,
+        "section_match": 0.5,
+        "law_match": 0.0,
+        "cross_reference": 0.0
+      },
+      "ndcg_at_5": 0.6643,
+      "recall_at_5_capped": 0.6,
+      "mrr": 0.875
+    },
+    {
+      "weights": {
+        "semantic": 1.0,
+        "section_match": 0.5,
+        "law_match": 0.15,
+        "cross_reference": 0.0
+      },
+      "ndcg_at_5": 0.6643,
+      "recall_at_5_capped": 0.6,
+      "mrr": 0.875
+    }
+  ]
+}

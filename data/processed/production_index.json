@@ -1,0 +1,18 @@
+{
+  "collection": "prod_statutes_section_whole_bgem3",
+  "chunk_strategy": "section_whole",
+  "embedding_model": "bge-m3",
+  "embedding_hf_id": "BAAI/bge-m3",
+  "embedding_dim": 1024,
+  "max_seq_length": 512,
+  "chunks": 878,
+  "embeddings": 878,
+  "by_law": {
+    "IPC": 523,
+    "BNS": 355
+  },
+  "truncated_chunks": 57,
+  "embed_seconds": 79.83,
+  "built_at": "2026-08-19T13:46:02+0530",
+  "reused_cache": false
+}

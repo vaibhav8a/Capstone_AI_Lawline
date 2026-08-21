@@ -1,0 +1,449 @@
+{
+  "generated_at": "2026-08-19T13:51:30+0530",
+  "rule": "multi-signal (see backend/services/abstention.py)",
+  "thresholds": {
+    "sim_hard": 0.4,
+    "sim_soft": 0.48,
+    "min_support": 2,
+    "margin_min": 0.02
+  },
+  "answerable_total": 38,
+  "answerable_correctly_answered": 38,
+  "false_abstentions": 0,
+  "unanswerable_total": 5,
+  "unanswerable_correctly_abstained": 5,
+  "missed_abstentions": 0,
+  "VALIDITY_WARNING": "Thresholds were selected by inspecting similarity ranges on THIS test set, so this is a fit to the data, not an estimate of generalisation. Only 5 unanswerable queries exist. Do not report this as accuracy.",
+  "per_query": [
+    {
+      "query_id": "d01",
+      "category": "direct_section",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "medium",
+      "correct": true,
+      "peak_similarity": 0.5211,
+      "support_count": 5
+    },
+    {
+      "query_id": "d02",
+      "category": "direct_section",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "medium",
+      "correct": true,
+      "peak_similarity": 0.5886,
+      "support_count": 15
+    },
+    {
+      "query_id": "d03",
+      "category": "direct_section",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "low",
+      "correct": true,
+      "peak_similarity": 0.4915,
+      "support_count": 1
+    },
+    {
+      "query_id": "d04",
+      "category": "direct_section",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "medium",
+      "correct": true,
+      "peak_similarity": 0.5052,
+      "support_count": 3
+    },
+    {
+      "query_id": "d05",
+      "category": "direct_section",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "medium",
+      "correct": true,
+      "peak_similarity": 0.542,
+      "support_count": 15
+    },
+    {
+      "query_id": "d06",
+      "category": "direct_section",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "medium",
+      "correct": true,
+      "peak_similarity": 0.5558,
+      "support_count": 15
+    },
+    {
+      "query_id": "d07",
+      "category": "direct_section",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "medium",
+      "correct": true,
+      "peak_similarity": 0.5127,
+      "support_count": 2
+    },
+    {
+      "query_id": "d08",
+      "category": "direct_section",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "medium",
+      "correct": true,
+      "peak_similarity": 0.5593,
+      "support_count": 6
+    },
+    {
+      "query_id": "d09",
+      "category": "direct_section",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "medium",
+      "correct": true,
+      "peak_similarity": 0.5506,
+      "support_count": 15
+    },
+    {
+      "query_id": "d10",
+      "category": "direct_section",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "medium",
+      "correct": true,
+      "peak_similarity": 0.4998,
+      "support_count": 4
+    },
+    {
+      "query_id": "n01",
+      "category": "natural_language",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "high",
+      "correct": true,
+      "peak_similarity": 0.6155,
+      "support_count": 15
+    },
+    {
+      "query_id": "n02",
+      "category": "natural_language",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "high",
+      "correct": true,
+      "peak_similarity": 0.6808,
+      "support_count": 15
+    },
+    {
+      "query_id": "n03",
+      "category": "natural_language",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "medium",
+      "correct": true,
+      "peak_similarity": 0.5123,
+      "support_count": 2
+    },
+    {
+      "query_id": "n04",
+      "category": "natural_language",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "medium",
+      "correct": true,
+      "peak_similarity": 0.5684,
+      "support_count": 11
+    },
+    {
+      "query_id": "n05",
+      "category": "natural_language",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "medium",
+      "correct": true,
+      "peak_similarity": 0.5132,
+      "support_count": 12
+    },
+    {
+      "query_id": "n06",
+      "category": "natural_language",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "medium",
+      "correct": true,
+      "peak_similarity": 0.5831,
+      "support_count": 15
+    },
+    {
+      "query_id": "n07",
+      "category": "natural_language",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "medium",
+      "correct": true,
+      "peak_similarity": 0.5536,
+      "support_count": 15
+    },
+    {
+      "query_id": "n08",
+      "category": "natural_language",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "high",
+      "correct": true,
+      "peak_similarity": 0.7491,
+      "support_count": 15
+    },
+    {
+      "query_id": "n09",
+      "category": "natural_language",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "high",
+      "correct": true,
+      "peak_similarity": 0.6287,
+      "support_count": 15
+    },
+    {
+      "query_id": "n10",
+      "category": "natural_language",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "medium",
+      "correct": true,
+      "peak_similarity": 0.5989,
+      "support_count": 15
+    },
+    {
+      "query_id": "p01",
+      "category": "paraphrase",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "high",
+      "correct": true,
+      "peak_similarity": 0.669,
+      "support_count": 15
+    },
+    {
+      "query_id": "p02",
+      "category": "paraphrase",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "high",
+      "correct": true,
+      "peak_similarity": 0.7122,
+      "support_count": 15
+    },
+    {
+      "query_id": "p03",
+      "category": "paraphrase",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "high",
+      "correct": true,
+      "peak_similarity": 0.7747,
+      "support_count": 15
+    },
+    {
+      "query_id": "p04",
+      "category": "paraphrase",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "high",
+      "correct": true,
+      "peak_similarity": 0.6375,
+      "support_count": 15
+    },
+    {
+      "query_id": "p05",
+      "category": "paraphrase",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "high",
+      "correct": true,
+      "peak_similarity": 0.7226,
+      "support_count": 15
+    },
+    {
+      "query_id": "p06",
+      "category": "paraphrase",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "high",
+      "correct": true,
+      "peak_similarity": 0.7277,
+      "support_count": 15
+    },
+    {
+      "query_id": "a01",
+      "category": "ambiguous",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "high",
+      "correct": true,
+      "peak_similarity": 0.6364,
+      "support_count": 15
+    },
+    {
+      "query_id": "a02",
+      "category": "ambiguous",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "high",
+      "correct": true,
+      "peak_similarity": 0.6611,
+      "support_count": 15
+    },
+    {
+      "query_id": "a03",
+      "category": "ambiguous",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "high",
+      "correct": true,
+      "peak_similarity": 0.6237,
+      "support_count": 15
+    },
+    {
+      "query_id": "a04",
+      "category": "ambiguous",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "high",
+      "correct": true,
+      "peak_similarity": 0.6949,
+      "support_count": 15
+    },
+    {
+      "query_id": "m01",
+      "category": "multi_section",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "high",
+      "correct": true,
+      "peak_similarity": 0.6866,
+      "support_count": 15
+    },
+    {
+      "query_id": "m02",
+      "category": "multi_section",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "high",
+      "correct": true,
+      "peak_similarity": 0.6486,
+      "support_count": 15
+    },
+    {
+      "query_id": "m03",
+      "category": "multi_section",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "high",
+      "correct": true,
+      "peak_similarity": 0.771,
+      "support_count": 15
+    },
+    {
+      "query_id": "m04",
+      "category": "multi_section",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "high",
+      "correct": true,
+      "peak_similarity": 0.693,
+      "support_count": 15
+    },
+    {
+      "query_id": "o01",
+      "category": "out_of_corpus",
+      "unanswerable": true,
+      "abstained": true,
+      "confidence": "none",
+      "correct": true,
+      "peak_similarity": 0.4259,
+      "support_count": 0
+    },
+    {
+      "query_id": "o02",
+      "category": "out_of_corpus",
+      "unanswerable": true,
+      "abstained": true,
+      "confidence": "none",
+      "correct": true,
+      "peak_similarity": 0.4657,
+      "support_count": 0
+    },
+    {
+      "query_id": "o03",
+      "category": "out_of_corpus",
+      "unanswerable": true,
+      "abstained": true,
+      "confidence": "none",
+      "correct": true,
+      "peak_similarity": 0.4496,
+      "support_count": 0
+    },
+    {
+      "query_id": "o04",
+      "category": "out_of_corpus",
+      "unanswerable": true,
+      "abstained": true,
+      "confidence": "none",
+      "correct": true,
+      "peak_similarity": 0.3776,
+      "support_count": 0
+    },
+    {
+      "query_id": "o05",
+      "category": "out_of_corpus",
+      "unanswerable": true,
+      "abstained": true,
+      "confidence": "none",
+      "correct": true,
+      "peak_similarity": 0.423,
+      "support_count": 0
+    },
+    {
+      "query_id": "b01",
+      "category": "ipc_bns_mapping",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "high",
+      "correct": true,
+      "peak_similarity": 0.6459,
+      "support_count": 15
+    },
+    {
+      "query_id": "b02",
+      "category": "ipc_bns_mapping",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "high",
+      "correct": true,
+      "peak_similarity": 0.6136,
+      "support_count": 15
+    },
+    {
+      "query_id": "b03",
+      "category": "ipc_bns_mapping",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "high",
+      "correct": true,
+      "peak_similarity": 0.6135,
+      "support_count": 15
+    },
+    {
+      "query_id": "b04",
+      "category": "ipc_bns_mapping",
+      "unanswerable": false,
+      "abstained": false,
+      "confidence": "high",
+      "correct": true,
+      "peak_similarity": 0.6696,
+      "support_count": 15
+    }
+  ]
+}

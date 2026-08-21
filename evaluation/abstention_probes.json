@@ -1,0 +1,25 @@
+{
+  "purpose": "Additional out-of-corpus (unanswerable) queries for evaluating abstention.",
+  "why_separate": "evaluation/test_queries.json is frozen: it is the test set the saved retrieval metrics in retrieval_experiments.json were measured on, and changing it would invalidate them. Abstention evaluation needs many more negatives than the 5 that set contains, so extra negatives live here. Ranking metrics never use out-of-corpus queries, so this file does not affect them either way.",
+  "labelling": "Every query below is answerable by NO section of the IPC or BNS. They span adjacent legal domains (tax, family, labour, procedure) as well as clearly unrelated topics, because near-domain queries are the harder case: they share vocabulary with criminal statutes without being covered by them.",
+  "probes": [
+    {"id": "x01", "query": "What are the filing requirements for a GST return?", "domain": "tax"},
+    {"id": "x02", "query": "How do I apply for an Indian passport?", "domain": "administrative"},
+    {"id": "x03", "query": "What is the procedure for registering a trademark in India?", "domain": "intellectual_property"},
+    {"id": "x04", "query": "What is the capital gains tax rate on equity shares?", "domain": "tax"},
+    {"id": "x05", "query": "Write me a Python function to reverse a linked list", "domain": "unrelated"},
+    {"id": "x06", "query": "How do I renew my passport?", "domain": "administrative"},
+    {"id": "x07", "query": "What is the best restaurant in Mumbai?", "domain": "unrelated"},
+    {"id": "x08", "query": "Explain quantum entanglement", "domain": "unrelated"},
+    {"id": "x09", "query": "What are the grounds for divorce under Hindu law?", "domain": "family_law"},
+    {"id": "x10", "query": "How much notice period is required to terminate an employee?", "domain": "labour_law"},
+    {"id": "x11", "query": "What is the stamp duty on a property sale in Karnataka?", "domain": "revenue"},
+    {"id": "x12", "query": "How do I file an income tax return online?", "domain": "tax"},
+    {"id": "x13", "query": "What documents are needed to register a private limited company?", "domain": "corporate"},
+    {"id": "x14", "query": "What is the minimum wage in Maharashtra?", "domain": "labour_law"},
+    {"id": "x15", "query": "How long does a patent last in India?", "domain": "intellectual_property"},
+    {"id": "x16", "query": "What is the interest rate on a home loan?", "domain": "unrelated"},
+    {"id": "x17", "query": "How do I get a driving licence?", "domain": "administrative"},
+    {"id": "x18", "query": "What are the visa requirements for visiting Japan?", "domain": "unrelated"}
+  ]
+}

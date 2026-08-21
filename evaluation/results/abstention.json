@@ -1,0 +1,52 @@
+{
+  "generated_at": "2026-08-19T19:10:18+0530",
+  "runs": [
+    {
+      "model": "bge-m3",
+      "strategy": "section_whole",
+      "in_corpus": {
+        "n": 38,
+        "min": 0.4915,
+        "mean": 0.6193,
+        "max": 0.7747
+      },
+      "out_of_corpus": {
+        "n": 5,
+        "min": 0.3776,
+        "mean": 0.4284,
+        "max": 0.4657
+      },
+      "threshold_separable": true,
+      "margin": 0.0258,
+      "suggested_threshold": 0.4786,
+      "caveat": "Based on 5 out-of-corpus queries only. A margin this size is suggestive, not robust \u2014 treat a similarity threshold as a secondary signal, never as the sole abstention mechanism.",
+      "per_query_out_of_corpus": [
+        {
+          "query_id": "o01",
+          "query": "What are the filing requirements for a GST return?",
+          "top_similarity": 0.4259
+        },
+        {
+          "query_id": "o02",
+          "query": "How do I apply for an Indian passport?",
+          "top_similarity": 0.4657
+        },
+        {
+          "query_id": "o03",
+          "query": "What is the procedure for registering a trademark in India?",
+          "top_similarity": 0.4496
+        },
+        {
+          "query_id": "o04",
+          "query": "What is the capital gains tax rate on equity shares?",
+          "top_similarity": 0.3776
+        },
+        {
+          "query_id": "o05",
+          "query": "Write me a Python function to reverse a linked list",
+          "top_similarity": 0.423
+        }
+      ]
+    }
+  ]
+}

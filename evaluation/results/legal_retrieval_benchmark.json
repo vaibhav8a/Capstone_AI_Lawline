@@ -1,0 +1,663 @@
+{
+  "generated_at": "2026-08-19T21:54:58+0530",
+  "weights_used": {
+    "semantic": 1.0,
+    "section_match": 0.25,
+    "law_match": 0.0,
+    "cross_reference": 0.25
+  },
+  "gold_label_caveat": "Judgment gold labels are derived by weak supervision (a judgment cites the section near the statute name). They measure citation retrieval, not human-judged relevance.",
+  "judgment_dev": {
+    "n": 8,
+    "recall_at_5_capped": 0.6,
+    "mrr": 0.875,
+    "ndcg_at_5": 0.6643,
+    "mean_latency_ms": 2152.87,
+    "per_query": [
+      {
+        "query": "What has the Supreme Court held about murder under IPC 302?",
+        "target": "IPC s.302",
+        "gold_size": 72,
+        "returned": 5,
+        "hits": 5,
+        "recall_at_5_raw": 0.0694,
+        "recall_at_5_capped": 1.0,
+        "mrr": 1.0,
+        "top_cases": [
+          "1972 INSC 307",
+          "2020 INSC 384",
+          "2018 INSC 1025",
+          "2019 INSC 510",
+          "2022 INSC 164"
+        ],
+        "query_type": "case_law"
+      },
+      {
+        "query": "Supreme Court judgments on common intention under section 34 IPC",
+        "target": "IPC s.34",
+        "gold_size": 36,
+        "returned": 5,
+        "hits": 1,
+        "recall_at_5_raw": 0.0278,
+        "recall_at_5_capped": 0.2,
+        "mrr": 1.0,
+        "top_cases": [
+          "2000 INSC 202",
+          "2022 INSC 30",
+          "2000 INSC 559",
+          "1994 INSC 112",
+          "2021 INSC 299"
+        ],
+        "query_type": "case_law"
+      },
+      {
+        "query": "Cases on culpable homicide not amounting to murder, IPC 304",
+        "target": "IPC s.304",
+        "gold_size": 20,
+        "returned": 5,
+        "hits": 5,
+        "recall_at_5_raw": 0.25,
+        "recall_at_5_capped": 1.0,
+        "mrr": 1.0,
+        "top_cases": [
+          "1985 INSC 11",
+          "2019 INSC 510",
+          "2021 INSC 301",
+          "2018 INSC 1198",
+          "2018 INSC 1025"
+        ],
+        "query_type": "direct_section"
+      },
+      {
+        "query": "What have the courts said about cheating under IPC 420?",
+        "target": "IPC s.420",
+        "gold_size": 15,
+        "returned": 5,
+        "hits": 4,
+        "recall_at_5_raw": 0.2667,
+        "recall_at_5_capped": 0.8,
+        "mrr": 1.0,
+        "top_cases": [
+          "2020 INSC 124",
+          "2021 INSC 177",
+          "2020 INSC 118",
+          "2018 INSC 1205",
+          "2019 INSC 602"
+        ],
+        "query_type": "direct_section"
+      },
+      {
+        "query": "Judgments interpreting criminal conspiracy under IPC 120B",
+        "target": "IPC s.120B",
+        "gold_size": 16,
+        "returned": 5,
+        "hits": 5,
+        "recall_at_5_raw": 0.3125,
+        "recall_at_5_capped": 1.0,
+        "mrr": 1.0,
+        "top_cases": [
+          "1994 INSC 545",
+          "1973 INSC 22",
+          "2020 INSC 118",
+          "2000 INSC 318",
+          "1973 INSC 62"
+        ],
+        "query_type": "direct_section"
+      },
+      {
+        "query": "Supreme Court decisions on attempt to murder, IPC 307",
+        "target": "IPC s.307",
+        "gold_size": 11,
+        "returned": 5,
+        "hits": 0,
+        "recall_at_5_raw": 0.0,
+        "recall_at_5_capped": 0.0,
+        "mrr": 0.0,
+        "top_cases": [
+          "1972 INSC 307",
+          "2020 INSC 384",
+          "2018 INSC 1025",
+          "1972 INSC 242",
+          "2021 INSC 477"
+        ],
+        "query_type": "case_law"
+      },
+      {
+        "query": "Case law on rioting under IPC 147",
+        "target": "IPC s.147",
+        "gold_size": 11,
+        "returned": 5,
+        "hits": 2,
+        "recall_at_5_raw": 0.1818,
+        "recall_at_5_capped": 0.4,
+        "mrr": 1.0,
+        "top_cases": [
+          "2020 INSC 384",
+          "2019 INSC 1282",
+          "2018 INSC 1181",
+          "2021 INSC 304",
+          "2020 INSC 118"
+        ],
+        "query_type": "case_law"
+      },
+      {
+        "query": "Judgments about voluntarily causing hurt under IPC 323",
+        "target": "IPC s.323",
+        "gold_size": 11,
+        "returned": 5,
+        "hits": 2,
+        "recall_at_5_raw": 0.1818,
+        "recall_at_5_capped": 0.4,
+        "mrr": 1.0,
+        "top_cases": [
+          "2023 INSC 569",
+          "2020 INSC 384",
+          "1977 INSC 167",
+          "1994 INSC 112",
+          "1972 INSC 242"
+        ],
+        "query_type": "direct_section"
+      }
+    ]
+  },
+  "judgment_held_out": {
+    "n": 8,
+    "recall_at_5_capped": 0.5333,
+    "mrr": 1.0,
+    "ndcg_at_5": 0.6427,
+    "mean_latency_ms": 74.5,
+    "per_query": [
+      {
+        "query": "What has the Supreme Court said about rape under IPC 376?",
+        "target": "IPC s.376",
+        "gold_size": 20,
+        "returned": 3,
+        "hits": 3,
+        "recall_at_5_raw": 0.15,
+        "recall_at_5_capped": 0.6,
+        "mrr": 1.0,
+        "top_cases": [
+          "2018 INSC 1192",
+          "2019 INSC 503",
+          "2022 INSC 1317"
+        ],
+        "query_type": "case_law"
+      },
+      {
+        "query": "Judgments on unlawful assembly under section 149 IPC",
+        "target": "IPC s.149",
+        "gold_size": 10,
+        "returned": 3,
+        "hits": 1,
+        "recall_at_5_raw": 0.1,
+        "recall_at_5_capped": 0.2,
+        "mrr": 1.0,
+        "top_cases": [
+          "2020 INSC 384",
+          "1994 INSC 579",
+          "2021 INSC 304"
+        ],
+        "query_type": "direct_section"
+      },
+      {
+        "query": "Supreme Court cases on abetment of suicide, IPC 306",
+        "target": "IPC s.306",
+        "gold_size": 8,
+        "returned": 5,
+        "hits": 5,
+        "recall_at_5_raw": 0.625,
+        "recall_at_5_capped": 1.0,
+        "mrr": 1.0,
+        "top_cases": [
+          "2021 INSC 477",
+          "2019 INSC 1281",
+          "2020 INSC 665",
+          "2021 INSC 301",
+          "2022 INSC 30"
+        ],
+        "query_type": "case_law"
+      },
+      {
+        "query": "Case law on dowry death under IPC 304B",
+        "target": "IPC s.304B",
+        "gold_size": 6,
+        "returned": 4,
+        "hits": 4,
+        "recall_at_5_raw": 0.6667,
+        "recall_at_5_capped": 0.8,
+        "mrr": 1.0,
+        "top_cases": [
+          "2021 INSC 301",
+          "2021 INSC 299",
+          "2022 INSC 30",
+          "2020 INSC 99"
+        ],
+        "query_type": "case_law"
+      },
+      {
+        "query": "Decisions interpreting kidnapping under IPC 363",
+        "target": "IPC s.363",
+        "gold_size": 6,
+        "returned": 5,
+        "hits": 2,
+        "recall_at_5_raw": 0.3333,
+        "recall_at_5_capped": 0.4,
+        "mrr": 1.0,
+        "top_cases": [
+          "2021 INSC 882",
+          "2019 INSC 1399",
+          "1972 INSC 265",
+          "2021 INSC 301",
+          "2023 INSC 677"
+        ],
+        "query_type": "direct_section"
+      },
+      {
+        "query": "What have courts held about criminal breach of trust, IPC 406?",
+        "target": "IPC s.406",
+        "gold_size": 6,
+        "returned": 5,
+        "hits": 2,
+        "recall_at_5_raw": 0.3333,
+        "recall_at_5_capped": 0.4,
+        "mrr": 1.0,
+        "top_cases": [
+          "2019 INSC 602",
+          "2022 INSC 940",
+          "1979 INSC 127",
+          "2020 INSC 432",
+          "2021 INSC 304"
+        ],
+        "query_type": "direct_section"
+      },
+      {
+        "query": "Judgments on grievous hurt under IPC 325",
+        "target": "IPC s.325",
+        "gold_size": 3,
+        "returned": 5,
+        "hits": 2,
+        "recall_at_5_raw": 0.6667,
+        "recall_at_5_capped": 0.6667,
+        "mrr": 1.0,
+        "top_cases": [
+          "2022 INSC 410",
+          "1972 INSC 157",
+          "1994 INSC 524",
+          "2020 INSC 384",
+          "1972 INSC 242"
+        ],
+        "query_type": "direct_section"
+      },
+      {
+        "query": "Supreme Court rulings on robbery under IPC 392",
+        "target": "IPC s.392",
+        "gold_size": 5,
+        "returned": 5,
+        "hits": 1,
+        "recall_at_5_raw": 0.2,
+        "recall_at_5_capped": 0.2,
+        "mrr": 1.0,
+        "top_cases": [
+          "1978 INSC 99",
+          "2022 INSC 164",
+          "2020 INSC 665",
+          "2023 INSC 771",
+          "2019 INSC 1282"
+        ],
+        "query_type": "case_law"
+      }
+    ]
+  },
+  "combined_dev": {
+    "n": 5,
+    "statute_hit_rate": 1.0,
+    "both_hit_rate": 1.0,
+    "mean_latency_ms": 67.61,
+    "per_query": [
+      {
+        "query": "What is IPC 302 and how have courts applied it?",
+        "target": "IPC s.302",
+        "statute_retrieved": true,
+        "supporting_judgment_retrieved": true,
+        "both": true,
+        "n_statutes": 5,
+        "n_judgments": 5,
+        "query_type": "direct_section"
+      },
+      {
+        "query": "Explain cheating under IPC 420 with case law",
+        "target": "IPC s.420",
+        "statute_retrieved": true,
+        "supporting_judgment_retrieved": true,
+        "both": true,
+        "n_statutes": 5,
+        "n_judgments": 5,
+        "query_type": "case_law"
+      },
+      {
+        "query": "What does section 34 IPC say and how is common intention proved?",
+        "target": "IPC s.34",
+        "statute_retrieved": true,
+        "supporting_judgment_retrieved": true,
+        "both": true,
+        "n_statutes": 5,
+        "n_judgments": 5,
+        "query_type": "direct_section"
+      },
+      {
+        "query": "Define criminal conspiracy and how the Supreme Court has construed it",
+        "target": "IPC s.120B",
+        "statute_retrieved": true,
+        "supporting_judgment_retrieved": true,
+        "both": true,
+        "n_statutes": 5,
+        "n_judgments": 5,
+        "query_type": "case_law"
+      },
+      {
+        "query": "What is culpable homicide under IPC 304 and its judicial interpretation?",
+        "target": "IPC s.304",
+        "statute_retrieved": true,
+        "supporting_judgment_retrieved": true,
+        "both": true,
+        "n_statutes": 5,
+        "n_judgments": 5,
+        "query_type": "direct_section"
+      }
+    ]
+  },
+  "combined_held_out": {
+    "n": 5,
+    "statute_hit_rate": 1.0,
+    "both_hit_rate": 1.0,
+    "mean_latency_ms": 71.16,
+    "per_query": [
+      {
+        "query": "What is IPC 376 and how have the courts interpreted it?",
+        "target": "IPC s.376",
+        "statute_retrieved": true,
+        "supporting_judgment_retrieved": true,
+        "both": true,
+        "n_statutes": 5,
+        "n_judgments": 5,
+        "query_type": "direct_section"
+      },
+      {
+        "query": "Explain abetment of suicide under IPC 306 with judicial authority",
+        "target": "IPC s.306",
+        "statute_retrieved": true,
+        "supporting_judgment_retrieved": true,
+        "both": true,
+        "n_statutes": 5,
+        "n_judgments": 5,
+        "query_type": "case_law"
+      },
+      {
+        "query": "What does IPC 304B provide and how is dowry death established?",
+        "target": "IPC s.304B",
+        "statute_retrieved": true,
+        "supporting_judgment_retrieved": true,
+        "both": true,
+        "n_statutes": 5,
+        "n_judgments": 3,
+        "query_type": "direct_section"
+      },
+      {
+        "query": "Criminal breach of trust under IPC 406 and its case law",
+        "target": "IPC s.406",
+        "statute_retrieved": true,
+        "supporting_judgment_retrieved": true,
+        "both": true,
+        "n_statutes": 5,
+        "n_judgments": 5,
+        "query_type": "case_law"
+      },
+      {
+        "query": "What is unlawful assembly under IPC 149 and how have courts applied it?",
+        "target": "IPC s.149",
+        "statute_retrieved": true,
+        "supporting_judgment_retrieved": true,
+        "both": true,
+        "n_statutes": 5,
+        "n_judgments": 5,
+        "query_type": "direct_section"
+      }
+    ]
+  },
+  "false_premise_dev": {
+    "n": 8,
+    "refusal_rate": 1.0,
+    "false_acceptance_rate": 0.0,
+    "by_category": {
+      "nonexistent_section": {
+        "n": 3,
+        "refused": 3,
+        "rate": 1.0
+      },
+      "absent_statute": {
+        "n": 5,
+        "refused": 5,
+        "rate": 1.0
+      }
+    },
+    "per_query": [
+      {
+        "query": "What is the punishment under IPC Section 999?",
+        "category": "nonexistent_section",
+        "expected": "refuse",
+        "refused": true,
+        "query_type": "unsupported",
+        "detected": [
+          "IPC section 999 does not exist in the corpus"
+        ],
+        "why_unsupported": "IPC has no s.999"
+      },
+      {
+        "query": "Explain IPC Section 888 on cyber fraud",
+        "category": "nonexistent_section",
+        "expected": "refuse",
+        "refused": true,
+        "query_type": "unsupported",
+        "detected": [
+          "IPC section 888 does not exist in the corpus"
+        ],
+        "why_unsupported": "IPC has no s.888"
+      },
+      {
+        "query": "What does BNS Section 1200 say?",
+        "category": "nonexistent_section",
+        "expected": "refuse",
+        "refused": true,
+        "query_type": "unsupported",
+        "detected": [
+          "BNS section 1200 does not exist in the corpus"
+        ],
+        "why_unsupported": "BNS has no s.1200"
+      },
+      {
+        "query": "How is maintenance calculated under Section 125 CrPC?",
+        "category": "absent_statute",
+        "expected": "refuse",
+        "refused": true,
+        "query_type": "unsupported",
+        "detected": [
+          "the query refers to Code of Criminal Procedure, 1973, which is not in this corpus (only the IPC and BNS are indexed)"
+        ],
+        "why_unsupported": "CrPC not in corpus"
+      },
+      {
+        "query": "What does Section 138 of the Negotiable Instruments Act provide?",
+        "category": "absent_statute",
+        "expected": "refuse",
+        "refused": true,
+        "query_type": "unsupported",
+        "detected": [
+          "the query refers to Negotiable Instruments Act, 1881, which is not in this corpus (only the IPC and BNS are indexed)"
+        ],
+        "why_unsupported": "NI Act not in corpus"
+      },
+      {
+        "query": "What is Section 66A of the Information Technology Act?",
+        "category": "absent_statute",
+        "expected": "refuse",
+        "refused": true,
+        "query_type": "unsupported",
+        "detected": [
+          "the query refers to Information Technology Act, 2000, which is not in this corpus (only the IPC and BNS are indexed)"
+        ],
+        "why_unsupported": "IT Act not in corpus"
+      },
+      {
+        "query": "What are the grounds for divorce under the Hindu Marriage Act?",
+        "category": "absent_statute",
+        "expected": "refuse",
+        "refused": true,
+        "query_type": "unsupported",
+        "detected": [
+          "the query refers to Hindu Marriage Act, 1955, which is not in this corpus (only the IPC and BNS are indexed)"
+        ],
+        "why_unsupported": "HMA not in corpus"
+      },
+      {
+        "query": "Explain section 27 of the Indian Evidence Act",
+        "category": "absent_statute",
+        "expected": "refuse",
+        "refused": true,
+        "query_type": "unsupported",
+        "detected": [
+          "the query refers to Indian Evidence Act, 1872, which is not in this corpus (only the IPC and BNS are indexed)"
+        ],
+        "why_unsupported": "Evidence Act not in corpus"
+      }
+    ]
+  },
+  "false_premise_held_out": {
+    "n": 10,
+    "refusal_rate": 1.0,
+    "false_acceptance_rate": 0.0,
+    "by_category": {
+      "nonexistent_section": {
+        "n": 3,
+        "refused": 3,
+        "rate": 1.0
+      },
+      "absent_statute": {
+        "n": 7,
+        "refused": 7,
+        "rate": 1.0
+      }
+    },
+    "per_query": [
+      {
+        "query": "What is IPC Section 750 about?",
+        "category": "nonexistent_section",
+        "expected": "refuse",
+        "refused": true,
+        "query_type": "unsupported",
+        "detected": [
+          "IPC section 750 does not exist in the corpus"
+        ],
+        "why_unsupported": "IPC has no s.750"
+      },
+      {
+        "query": "Explain BNS Section 999",
+        "category": "nonexistent_section",
+        "expected": "refuse",
+        "refused": true,
+        "query_type": "unsupported",
+        "detected": [
+          "BNS section 999 does not exist in the corpus"
+        ],
+        "why_unsupported": "BNS has no s.999"
+      },
+      {
+        "query": "What does IPC section 620 prescribe?",
+        "category": "nonexistent_section",
+        "expected": "refuse",
+        "refused": true,
+        "query_type": "unsupported",
+        "detected": [
+          "IPC section 620 does not exist in the corpus"
+        ],
+        "why_unsupported": "IPC has no s.620"
+      },
+      {
+        "query": "What is the penalty under section 420 of the NDPS Act?",
+        "category": "absent_statute",
+        "expected": "refuse",
+        "refused": true,
+        "query_type": "unsupported",
+        "detected": [
+          "the query refers to Narcotic Drugs and Psychotropic Substances Act, 1985, which is not in this corpus (only the IPC and BNS are indexed)"
+        ],
+        "why_unsupported": "NDPS not in corpus"
+      },
+      {
+        "query": "Explain section 12 of the POCSO Act",
+        "category": "absent_statute",
+        "expected": "refuse",
+        "refused": true,
+        "query_type": "unsupported",
+        "detected": [
+          "the query refers to Protection of Children from Sexual Offences Act, 2012, which is not in this corpus (only the IPC and BNS are indexed)"
+        ],
+        "why_unsupported": "POCSO not in corpus"
+      },
+      {
+        "query": "What does section 100 CPC provide?",
+        "category": "absent_statute",
+        "expected": "refuse",
+        "refused": true,
+        "query_type": "unsupported",
+        "detected": [
+          "the query refers to Code of Civil Procedure, 1908, which is not in this corpus (only the IPC and BNS are indexed)"
+        ],
+        "why_unsupported": "CPC not in corpus"
+      },
+      {
+        "query": "Section 173 of the Code of Criminal Procedure",
+        "category": "absent_statute",
+        "expected": "refuse",
+        "refused": true,
+        "query_type": "unsupported",
+        "detected": [
+          "the query refers to Code of Criminal Procedure, 1973, which is not in this corpus (only the IPC and BNS are indexed)"
+        ],
+        "why_unsupported": "CrPC not in corpus"
+      },
+      {
+        "query": "What is section 7 of the Prevention of Corruption Act?",
+        "category": "absent_statute",
+        "expected": "refuse",
+        "refused": true,
+        "query_type": "unsupported",
+        "detected": [
+          "the query refers to Prevention of Corruption Act, 1988, which is not in this corpus (only the IPC and BNS are indexed)"
+        ],
+        "why_unsupported": "PC Act not in corpus"
+      },
+      {
+        "query": "Under BNSS section 480, what is the bail procedure?",
+        "category": "absent_statute",
+        "expected": "refuse",
+        "refused": true,
+        "query_type": "unsupported",
+        "detected": [
+          "the query refers to Bharatiya Nagarik Suraksha Sanhita, 2023, which is not in this corpus (only the IPC and BNS are indexed)"
+        ],
+        "why_unsupported": "BNSS not in corpus"
+      },
+      {
+        "query": "What does the Motor Vehicles Act section 166 say?",
+        "category": "absent_statute",
+        "expected": "refuse",
+        "refused": true,
+        "query_type": "unsupported",
+        "detected": [
+          "the query refers to Motor Vehicles Act, 1988, which is not in this corpus (only the IPC and BNS are indexed)"
+        ],
+        "why_unsupported": "MV Act not in corpus"
+      }
+    ]
+  }
+}

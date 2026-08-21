@@ -1,0 +1,9 @@
+{
+  "generated_at": "2026-08-20T15:25:14+0530",
+  "model": "openai/gpt-oss-120b",
+  "n_questions": 23,
+  "complete": false,
+  "configurations_present": [],
+  "note": "factual_correctness is null throughout: it requires a qualified human reader. Raw answers are saved per question so it can be scored later. No value here is estimated.",
+  "configurations": {}
+}

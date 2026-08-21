@@ -1,0 +1,221 @@
+---
+alwaysApply: true
+---
+
+"""
+critique.py
+Router for Adversarial Argument Critique Mode.
+Generates counter-queries, retrieves limiting precedents,
+and evaluates argument vulnerability.
+"""
+
+from fastapi import APIRouter, HTTPException
+from pydantic import BaseModel
+import logging
+import json
+
+from backend.services.rag_service import rag_service
+import config
+
+logger = logging.getLogger(__name__)
+router = APIRouter()
+
+
+# -----------------------------
+# Request Schema
+# -----------------------------
+
+class CritiqueRequest(BaseModel):
+    argument: str
+
+
+# -----------------------------
+# Counter Query Generator
+# -----------------------------
+
+async def generate_counter_queries(argument: str):
+    """
+    Generates adversarial legal search queries
+    that find contradicting precedents.
+    """
+
+    prompt = f"""
+You are a legal researcher.
+
+Generate 5 adversarial legal search queries
+that find cases LIMITING or REJECTING this claim.
+
+Argument:
+{argument}
+
+Focus on:
+
+- Exceptions
+- Limitations
+- Restrictions
+- Judicial narrowing
+- Rejected arguments
+
+Return ONLY JSON:
+
+{{
+ "queries": [
+   "query 1",
+   "query 2",
+   "query 3",
+   "query 4",
+   "query 5"
+ ]
+}}
+"""
+
+    client = rag_service.query_engine.client
+
+    response = await client.chat.completions.create(
+        messages=[{"role": "user", "content": prompt}],
+        model=config.GROQ_MODEL,
+        temperature=0.2,
+        response_format={"type": "json_object"}
+    )
+
+    data = json.loads(response.choices[0].message.content)
+
+    return data.get("queries", [])
+
+
+# -----------------------------
+# Main Critique Route
+# -----------------------------
+
+@router.post("/score")
+async def score_argument(request: CritiqueRequest):
+    """
+    Full adversarial critique pipeline:
+
+    1. Generate counter-queries
+    2. Retrieve contradictory precedents
+    3. Analyze argument
+    4. Return structured critique
+    """
+
+    if not rag_service.initialized or not rag_service.query_engine.client:
+        raise HTTPException(status_code=503, detail="Service not ready.")
+
+    try:
+
+        logger.info("Starting adversarial critique")
+
+        # ----------------------------------
+        # STEP 1 — Generate Counter Queries
+        # ----------------------------------
+
+        counter_queries = await generate_counter_queries(
+            request.argument
+        )
+
+        if not counter_queries:
+            raise Exception("Failed to generate counter queries")
+
+        logger.info(f"Generated queries: {counter_queries}")
+
+
+        # ----------------------------------
+        # STEP 2 — Retrieve Context
+        # ----------------------------------
+
+        all_chunks = []
+
+        for q in counter_queries:
+
+            res = await rag_service.query(q)
+
+            chunks = res.get("context_chunks", [])
+
+            all_chunks.extend(chunks)
+
+
+        # Remove duplicate chunks
+        unique_chunks = []
+
+        seen_texts = set()
+
+        for c in all_chunks:
+
+            text = c.get("text", "")
+
+            if text and text not in seen_texts:
+                seen_texts.add(text)
+                unique_chunks.append(text)
+
+
+        # Limit context size
+        context_str = "\n\n".join(unique_chunks[:8])
+
+        logger.info(
+            f"Retrieved {len(unique_chunks)} unique context chunks"
+        )
+
+
+        # ----------------------------------
+        # STEP 3 — Adversarial Critique
+        # ----------------------------------
+
+        prompt = f"""
+You are a senior constitutional lawyer acting as opposing counsel.
+
+Your job is to ATTACK the argument using legal precedent.
+
+You must:
+
+1. Identify logical weaknesses
+2. Cite contradicting precedents
+3. Show how courts may reject the claim
+4. Assign a vulnerability score
+
+Return ONLY JSON:
+
+{{
+   "strike_score": (1-100),
+   "weaknesses": [
+      "legal flaw 1",
+      "legal flaw 2"
+   ],
+   "counter_cases": [
+      "Case Name → key holding",
+      "Case Name → key holding"
+   ]
+}}
+
+Argument:
+{request.argument}
+
+Retrieved Counter Context:
+{context_str}
+"""
+
+        client = rag_service.query_engine.client
+
+        response = await client.chat.completions.create(
+            messages=[{"role": "user", "content": prompt}],
+            model=config.GROQ_MODEL,
+            temperature=0.1,
+            response_format={"type": "json_object"}
+        )
+
+        data = json.loads(
+            response.choices[0].message.content
+        )
+
+        logger.info("Critique completed successfully")
+
+        return data
+
+
+    except Exception as e:
+
+        logger.error(f"Critique error: {e}")
+
+        raise HTTPException(
+            status_code=500,
+            detail=str(e)
+        )

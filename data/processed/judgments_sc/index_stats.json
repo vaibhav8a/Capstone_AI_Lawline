@@ -1,0 +1,19 @@
+{
+  "collection": "prod_judgments_sc_bgem3",
+  "judgments": 1500,
+  "passages_expected": 87751,
+  "embeddings": 87751,
+  "complete": true,
+  "embedding_model": "BAAI/bge-m3",
+  "embedding_dim": 1024,
+  "device": "mps",
+  "by_law": {
+    "IPC": 1280,
+    "CrPC": 128,
+    "other": 47,
+    "NDPS": 18,
+    "Evidence": 13,
+    "BNS": 14
+  },
+  "built_at": "2026-08-21T13:20:24+0530"
+}

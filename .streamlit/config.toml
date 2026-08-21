@@ -1,0 +1,9 @@
+[theme]
+# Capstone-friendly black & white theme
+base = "dark"
+primaryColor = "#38BDF8"
+backgroundColor = "#0B0C10"
+secondaryBackgroundColor = "#111319"
+textColor = "#F8FAFC"
+font = "sans serif"
+
