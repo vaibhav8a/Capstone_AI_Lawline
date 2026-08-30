@@ -245,7 +245,11 @@ TOPIC_FLOORS = {
     # 100 was unreachable from this source and would only have forced the
     # quota-rescue tier to admit weak matter chasing a number that does not
     # exist. See docs/corpus_selection.md §4.
-    "new_codes": 45,
+    # Source-limited, not effort-limited. Measured ceiling from this dataset is
+    # ~82, and reaching it would cost 577 judgments — 82% of the 700 budget — at
+    # POCSO's expense. This floor states what a proportionate allocation
+    # achieves; the harvest reports what was actually found.
+    "new_codes": 75,
     "sexual_offences": 80,
     "sentencing": 80,
     "common_intention": 80,
@@ -254,7 +258,7 @@ TOPIC_FLOORS = {
     "conspiracy": 60,
     "quashing": 60,
     "circumstantial": 60,
-    "pocso": 60,           # measured 10
+    "pocso": 80,           # measured 10
     "ndps": 60,            # measured 14
     "attempt": 50,
     "abetment": 50,
@@ -326,49 +330,53 @@ def admit(score: int, topics: list[str], counts: dict[str, int],
 # Years already represented before the 1,500 expansion began.
 EXISTING_YEARS = tuple(range(1973, 2001)) + tuple(range(2001, 2027))
 
+# The 2,200 -> 3,000 round (+800). Every stratum name here is NEW, so each
+# target is exactly what this round should harvest. Reusing a previous round's
+# name would make the target CUMULATIVE against the records already tagged with
+# it — `mid_2001_2017` needed a target of 290 last round to request 70 more.
 STRATA = (
     {
-        "name": "bns_era_deepen",
-        "years": (2024, 2025, 2026),
-        "target": 150,
-        "rationale": "Exhausts the only band where BNS/BNSS/BSA judgments exist. "
-                     "2026 is 33% new-codes but holds ~102 unexamined rows, so "
-                     "this is the ceiling the source imposes, not a choice.",
+        "name": "mid_depth_2001_2017",
+        "years": tuple(range(2001, 2018)),
+        "target": 300,
+        "rationale": "The reservoir: ~5,300 qualifying candidates still unexamined at "
+                     "the highest acceptance rate measured (39.2%). General criminal-law "
+                     "depth at the lowest cost per retained judgment.",
     },
     {
-        "name": "recent_topic_hunt",
+        "name": "pocso_depth",
         "years": (2018, 2019, 2020, 2021, 2022, 2023),
         "target": 200,
-        "rationale": "The only home of POCSO (7.6% of retained) and PMLA (2.7%); "
-                     "NDPS runs 8.5% here. Both topics are 0% before 2018.",
+        "rationale": "POCSO sits at 63 — only 1.1x its floor, the thinnest topic in the "
+                     "corpus — and is 0% before 2018. ~900 qualifying candidates remain "
+                     "here. Also carries PMLA (2.0x) and juvenile justice (2.3x).",
     },
     {
-        "name": "mid_2001_2017",
-        "years": tuple(range(2001, 2018)),
-        "target": 220,
-        "rationale": "Thinnest band in the corpus — 144 judgments across 16 years "
-                     "— and the highest acceptance rate measured (41.6%). Includes "
-                     "2017, which the previous stratum filled its target before "
-                     "reaching and never fetched at all.",
-    },
-    {
-        "name": "historical_1950_1972",
+        "name": "early_depth_1950_1972",
         "years": tuple(range(1950, 1973)),
-        "target": 80,
-        "rationale": "23 years at zero coverage: the corpus began at 1973. Early "
-                     "IPC jurisprudence remains good law even where the CrPC 1898 "
-                     "procedure around it does not.",
+        "target": 140,
+        "rationale": "~1,900 qualifying candidates at 25.1% acceptance. Early IPC "
+                     "jurisprudence, still the thinnest era by judgment count.",
     },
     {
-        "name": "deepen_1973_2000",
-        "years": (1973, 1978, 1980, 1985, 1994, 2000),
-        "target": 50,
-        "rationale": "Modest depth in the founding years. Held small deliberately: "
-                     "this band measures 13.8% acceptance, the lowest of any.",
+        "name": "bns_final",
+        "years": (2024, 2025, 2026),
+        "target": 100,
+        "rationale": "Only ~464 unexamined rows and ~180 qualifying candidates remain in "
+                     "the entire 2024-2026 band. This round substantially exhausts the "
+                     "only source of BNS/BNSS/BSA judgments that exists.",
+    },
+    {
+        "name": "year_completion",
+        # The last four years from which no candidate has ever been examined.
+        "years": (1971, 1972, 1998, 1999),
+        "target": 60,
+        "rationale": "Closes the final gaps in year coverage. These four years have never "
+                     "had a single candidate examined; ~2,150 rows sit behind them.",
     },
 )
 
-TARGET_TOTAL = 1500
+TARGET_TOTAL = 3000
 
 
 # ── download ordering ───────────────────────────────────────────────────────

@@ -1,19 +1,20 @@
 {
   "collection": "prod_judgments_sc_bgem3",
-  "judgments": 1500,
-  "passages_expected": 87751,
-  "embeddings": 87751,
+  "judgments": 3000,
+  "passages_expected": 177830,
+  "embeddings": 177830,
   "complete": true,
   "embedding_model": "BAAI/bge-m3",
   "embedding_dim": 1024,
   "device": "mps",
   "by_law": {
-    "IPC": 1280,
-    "CrPC": 128,
-    "other": 47,
-    "NDPS": 18,
-    "Evidence": 13,
-    "BNS": 14
+    "IPC": 2556,
+    "CrPC": 257,
+    "other": 93,
+    "NDPS": 37,
+    "Evidence": 20,
+    "BNS": 35,
+    "POCSO": 2
   },
-  "built_at": "2026-08-21T13:20:24+0530"
+  "built_at": "2026-08-29T21:09:03+0530"
 }

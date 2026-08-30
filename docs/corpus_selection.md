@@ -71,56 +71,51 @@ judgment usually sits in several.
 ### Floors
 
 Expressed as judgment counts in the corpus. A topic below its floor pulls
-candidates in; at its floor it stops exerting pull. Held-at-800 is the state
-the 1,500 expansion starts from.
+candidates in; at its floor it stops exerting pull. Sorted by how close each
+topic sits to its floor — the ratio, not the raw count, is what identifies a
+thin area worth targeting in the next expansion.
 
-| Topic | Floor | Held at 800 | Status |
+| Topic | Floor | Held at 3,000 | Status |
 | --- | --- | --- | --- |
-| `sexual_offences` | 80 | 109 | met |
-| `sentencing` | 80 | 188 | met |
-| `common_intention` | 80 | 226 | met |
-| `cheating` | 60 | 96 | met |
-| `theft_robbery` | 60 | 124 | met |
-| `conspiracy` | 60 | 159 | met |
-| `quashing` | 60 | 134 | met |
-| `circumstantial` | 60 | 118 | met |
-| `pocso` | 60 | 24 | **short by 36** |
-| `ndps` | 60 | 44 | **short by 16** |
-| `attempt` | 50 | 104 | met |
-| `abetment` | 50 | 71 | met |
-| `breach_of_trust` | 50 | 68 | met |
-| `dowry_cruelty` | 50 | 81 | met |
-| `dying_declaration` | 50 | 53 | met |
-| `confession_recovery` | 50 | 56 | met |
-| `new_codes` (BNS/BNSS/BSA) | 45 | 23 | **short by 22** |
-| `corruption` | 40 | 88 | met |
-| `uapa` | 30 | 36 | met |
-| `juvenile` | 25 | 20 | **short by 5** |
-| `pmla` | 25 | 19 | **short by 6** |
+| `pocso` | 80 | 82 | met (1.0x) |
+| `new_codes` (BNS/BNSS/BSA) | 75 | 85 | met (1.1x) |
+| `pmla` | 25 | 56 | met (2.2x) |
+| `juvenile` | 25 | 71 | met (2.8x) |
+| `ndps` | 60 | 184 | met (3.1x) |
+| `dying_declaration` | 50 | 170 | met (3.4x) |
+| `uapa` | 30 | 127 | met (4.2x) |
+| `breach_of_trust` | 50 | 214 | met (4.3x) |
+| `sexual_offences` | 80 | 361 | met (4.5x) |
+| `abetment` | 50 | 250 | met (5.0x) |
+| `dowry_cruelty` | 50 | 251 | met (5.0x) |
+| `confession_recovery` | 50 | 270 | met (5.4x) |
+| `cheating` | 60 | 328 | met (5.5x) |
+| `theft_robbery` | 60 | 402 | met (6.7x) |
+| `circumstantial` | 60 | 427 | met (7.1x) |
+| `quashing` | 60 | 467 | met (7.8x) |
+| `attempt` | 50 | 413 | met (8.3x) |
+| `corruption` | 40 | 333 | met (8.3x) |
+| `sentencing` | 80 | 739 | met (9.2x) |
+| `conspiracy` | 60 | 585 | met (9.8x) |
+| `common_intention` | 80 | 912 | met (11.4x) |
 
-The `new_codes` floor was **revised from 100 to 45** after the 1,500-expansion
-audit measured what the source can actually supply. BNS density among retained
-judgments is 4.9% (2024), 6.2% (2025) and 33.3% (2026) — and 2026 holds only
-about 102 unexamined rows in the entire dataset. Exhausting all of 2024-2026
-under the existing quality bar yields roughly 45-50 such judgments, and going to
-a 2,000-judgment corpus would add essentially none, because the constraint is the
-source rather than the harvest. Reported judgments applying BNS/BNSS/BSA do not
-yet exist in volume: most 2024-25 offences predate the 1 July 2024 commencement.
-
-Leaving the floor at 100 would not have produced BNS coverage. It would only have
-kept the quota-rescue tier permanently open on `new_codes`, admitting weaker
-matter in pursuit of a number that does not exist in the corpus of reported
-decisions. The floor states what is achievable and the harvest reports what was
-actually found.
+`pocso` and `new_codes` are the two floors that have been revised on evidence.
+Both are **source-limited**: POCSO does not appear at all in reported judgments
+before 2018, and BNS/BNSS/BSA judgments exist only in 2024-2026, a band now
+substantially exhausted (roughly 180 qualifying candidates remained before the
+3,000 round). Their floors state what the source can actually supply rather than
+a round number, because an unreachable floor would hold the quota-rescue tier
+permanently open and admit weaker matter in pursuit of a number that does not
+exist.
 
 ### Ceilings
 
 Ceilings are a **share of the corpus target**, not an absolute count:
 
-| Topic | Share | At 800 | At 1,500 |
-| --- | --- | --- | --- |
-| `murder` | 50% | 400 | **750** |
-| `bail` | 50% | 400 | **750** |
+| Topic | Share | At 800 | At 1,500 | At 3,000 |
+| --- | --- | --- | --- | --- |
+| `murder` | 50% | 400 | 750 | **1500** |
+| `bail` | 50% | 400 | 750 | **1500** |
 
 They were absolute (400 each) while the target was 800, where 400 meant "half the
 corpus". Carried unchanged to a 1,500 target the same 400 would have meant 27%,
@@ -148,11 +143,11 @@ quota-fill pass rather than forcing weak material in to hit a number.
 
 | Stratum | Years | Target | Why |
 | --- | --- | --- | --- |
-| `bns_era_deepen` | 2024–2026 | 150 | The only band where BNS/BNSS/BSA judgments exist. 2026 is 33% new-codes but holds ~102 unexamined rows — the source's ceiling, not a choice. |
-| `recent_topic_hunt` | 2018–2023 | 200 | Sole home of POCSO (7.6% of retained) and PMLA (2.7%); NDPS runs 8.5%. Both are **0%** before 2018. |
-| `mid_2001_2017` | 2001–2017 | 220 | Thinnest band — 144 judgments across 16 years — and the highest acceptance measured (41.6%). Includes **2017**, which the previous stratum filled its target before reaching and never fetched. |
-| `historical_1950_1972` | 1950–1972 | 80 | 23 years at zero coverage; the corpus began at 1973. Early IPC jurisprudence remains good law even where the CrPC 1898 procedure around it does not. |
-| `deepen_1973_2000` | 1973–2000 | 50 | Modest depth in the founding years. Held small deliberately: this band measures 13.8% acceptance, the lowest of any. |
+| `mid_depth_2001_2017` | 2001–2017 | 300 | The reservoir: ~5,300 qualifying candidates still unexamined at the highest acceptance rate measured (39.2%). General criminal-law depth at the lowest cost per retained judgment. |
+| `pocso_depth` | 2018–2023 | 200 | POCSO sits at 63 — only 1.1x its floor, the thinnest topic in the corpus — and is 0% before 2018. ~900 qualifying candidates remain here. Also carries PMLA (2.0x) and juvenile justice (2.3x). |
+| `early_depth_1950_1972` | 1950–1972 | 140 | ~1,900 qualifying candidates at 25.1% acceptance. Early IPC jurisprudence, still the thinnest era by judgment count. |
+| `bns_final` | 2024, 2025, 2026 | 100 | Only ~464 unexamined rows and ~180 qualifying candidates remain in the entire 2024-2026 band. This round substantially exhausts the only source of BNS/BNSS/BSA judgments that exists. |
+| `year_completion` | 1971, 1972, 1998, 1999 | 60 | Closes the final gaps in year coverage. These four years have never had a single candidate examined; ~2,150 rows sit behind them. |
 | `quota_fill` | all of the above | remainder | Runs only if the strata under-deliver or floors remain short. |
 
 Acceptance is driven by **era, not depth**. Measured by examination depth within

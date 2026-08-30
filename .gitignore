@@ -46,9 +46,14 @@ frontend/dist/
 .vite/
 .pytest_cache/
 
-# Source PDFs (licensed material, not ours to redistribute)
+# Source PDFs (licensed material, not ours to redistribute).
+# NOT a blanket *.PDF rule: macOS is case-insensitive, so `*.PDF` also matched
+# `*.pdf` and silently swallowed docs/LawLine_AI_Project_Report.pdf. Scope it.
 Dataset/
-*.PDF
+/test.pdf
 
 # DVC local object cache (content, not pointers)
 .dvc/cache/
+
+# Vite writes these transient config shims next to vite.config.ts
+vite.config.ts.timestamp-*
