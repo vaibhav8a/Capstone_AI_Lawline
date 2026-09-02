@@ -253,3 +253,24 @@ python -m backend.ingestion.fetch_judgments --verify
 
 Interrupting with `Ctrl-C` or `SIGTERM` finishes the candidate in flight, saves
 corpus, ledger and provenance, and exits. Re-running continues where it stopped.
+
+## 11. Getting the corpus
+
+The corpus itself is **not committed**. It is published as a GitHub Release asset,
+because git stores gzip blobs whole with no delta compression: committing it would
+add ~40 MB to the repository on every expansion, permanently, and every clone would
+carry all historical versions.
+
+```bash
+./scripts/restore-corpus.sh v3000     # 41 MB download, checksum-verified
+./scripts/index-judgments.sh          # rebuild the vector index (~11 h on MPS)
+```
+
+| Asset | Size | Contents |
+| --- | ---: | --- |
+| `judgments.json.gz` | 41.4 MB | 3,000 judgments, 139.3 M characters, 1950-2026 |
+| `candidate_ledger.json.gz` | 0.7 MB | 9,350 candidates examined, with every rejection reason |
+
+The source PDFs (1.2 GB) and the ChromaDB index (4.1 GB) are not published. Each
+PDF is re-fetchable from its record's `source_url` and verifiable against the
+`pdf_sha256` the record carries; the index is rebuilt from the corpus.
