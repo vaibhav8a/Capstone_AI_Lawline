@@ -335,7 +335,7 @@ backend/
 evaluation/      test set, IR metrics, experiment runners, results/
 frontend/src/    React app; components/statute/ is the production UI
 docs/            architecture, data_pipeline, evaluation
-tests/           114 tests
+tests/           181 test functions across 9 files
 ```
 
 ## 14. Sources
@@ -346,4 +346,6 @@ Justice, Government of India):
 * [The Indian Penal Code, 1860](https://www.indiacode.nic.in/bitstream/123456789/4219/1/THE-INDIAN-PENAL-CODE-1860.pdf) — Act 45 of 1860, repealed w.e.f. 2024-07-01
 * [The Bharatiya Nyaya Sanhita, 2023](https://www.indiacode.nic.in/bitstream/123456789/20062/1/a202345.pdf) — Act 45 of 2023, in force from 2024-07-01
 
-Checksums and retrieval dates: `data/raw/statutes/provenance.json`.
+Checksums and retrieval dates are recorded per document in
+`data/raw/statutes/provenance.json`, written by the fetch step in §6. That path is
+gitignored, so it appears after you build the corpus rather than in a fresh clone.
