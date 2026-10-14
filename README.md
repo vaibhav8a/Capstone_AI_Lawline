@@ -248,8 +248,10 @@ curl -X POST http://localhost:8000/api/statute/answer -H 'Content-Type: applicat
 python -m pytest tests/ -q
 ```
 
-114 pass, 3 skip without a Groq key, 4 are `xfail` pinning a **measured**
-abstention limitation (see §11).
+232 tests. On a fresh clone 164 pass and 66 skip, each naming the step it is
+waiting for: most need the production index (§6), 7 need `GROQ_API_KEY`. Two are
+`xfail`, pinning a known limit of the grounding verifier: it checks claims
+lexically, so a wrong claim built only from words in the context gets through.
 
 ## 9. Reproduce the experiments
 
