@@ -57,3 +57,10 @@ Dataset/
 
 # Vite writes these transient config shims next to vite.config.ts
 vite.config.ts.timestamp-*
+
+# Editor and AI-assistant config
+.claude/
+.cursor/
+
+# DVC runtime state
+.dvc/tmp/

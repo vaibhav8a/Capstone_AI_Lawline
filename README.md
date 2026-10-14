@@ -59,8 +59,8 @@ Detail: [`docs/architecture.md`](docs/architecture.md).
 ## 5. Installation
 
 ```bash
-git clone https://github.com/Saiprasad-Benagi/LawLine-AI.git
-cd LawLine-AI
+git clone https://github.com/vaibhav8a/Capstone_AI_Lawline.git
+cd Capstone_AI_Lawline
 ```
 
 ```bash
@@ -116,12 +116,20 @@ retrieval silently returned nothing.
 
 ### Optional: the judgment corpus
 
+3,000 Supreme Court of India criminal-law judgments spanning 1950–2026, chosen
+from 9,350 examined candidates by the criteria in
+[`docs/corpus_selection.md`](docs/corpus_selection.md); every rejection is recorded
+with its reason. They are indexed as 177,830 passages and used by the case-law
+tabs, not by the statute pipeline or its experiments.
+
+The corpus is published as a release asset rather than committed. Download it
+(41 MB, SHA-256 verified before unpacking):
+
 ```bash
-python preprocessor.py --input Dataset --output data/processed/judgments
+./scripts/restore-corpus.sh
 ```
 
-13 court judgments, used by the case-law tabs. Not used by the statute pipeline
-or by any experiment.
+Then embed it with `./scripts/index-judgments.sh` (see below).
 
 ## 7. Run it
 
@@ -166,8 +174,9 @@ to continue) and tells you so. `./scripts/stop.sh --all` stops that too.
 
 ### Long-running indexing
 
-Embedding 260 judgments (17,342 passages) takes roughly **90 minutes on MPS**. It
-is checkpointed, so it can be stopped and resumed freely.
+Embedding runs at roughly 190 passages a minute on MPS (a 17,342-passage slice
+took about 90 minutes), so the full 177,830-passage corpus is a job of many hours.
+It is checkpointed, so it can be stopped and resumed freely.
 
 | Command | Purpose |
 | --- | --- |
